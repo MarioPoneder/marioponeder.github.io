@@ -7,13 +7,6 @@ nav_order: 1
 <picture><source srcset="./img/banner_dark.png" media="(prefers-color-scheme: dark)"/><img src="./img/banner.png"/></picture>
 ### <sup>Represented by Mario Poneder </sup><img src="./img/profile.png" width="28px"><sup> , also known as 0xTheC0der </sup><img src="./img/icon.png" width="28px"><sup> .</sup>  
 ---
-<p align="right">
-<a name="social-buttons"></a>
-<a href="https://github.com/MarioPoneder/audits"><img align="left" src="https://img.shields.io/badge/Public-Reports-4258B9?style=for-the-badge" alt="Public Reports"></a>
-</p>
-
-&nbsp;
-
 
 ## Decentralizing the future, block by block ...
 Hi, I am Mario Poneder, a former software engineer who found his way into the Web3 space and gladly offer you my services as an **independent smart contract security researcher**.

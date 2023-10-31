@@ -4,10 +4,10 @@ theme: just-the-docs
 
 url: https://decentra.vision/
 
-#aux_links:
-#  Template Repository: https://github.com/just-the-docs/just-the-docs-template
-
-logo: "img/logo.png"
+aux_links:
+  View Public Reports: https://github.com/MarioPoneder/audits
+  
+#logo: "img/logo.png"
 
 heading_anchors: false
 
