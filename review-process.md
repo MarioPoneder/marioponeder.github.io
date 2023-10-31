@@ -4,10 +4,10 @@ layout: page
 nav_order: 5
 ---
 
-## Security review process
+# Security review process
 A brief overview about the security review process, what to expect and how you can benefit from it.
 
-### 1. Let me know about your project &ndash; Get a quote
+## 1. Let me know about your project &ndash; Get a quote
 
 **Get in touch** with me using one of the [communication channels](#social-buttons) above and please provide me with the following information about your project:
 
@@ -21,7 +21,7 @@ A brief overview about the security review process, what to expect and how you c
 > ℹ️ **Important**  
 > All non-public information shared with me will be treated as confidential.
 
-### 2. Preparing for kick-off &ndash; Determining our collaboration
+## 2. Preparing for kick-off &ndash; Determining our collaboration
 Once you provided me with the required information, I will proceed to **pre-review** your codebase and afterwards get back to you for scheduling a call &ndash; could also be a chat if you prefer &ndash; in order to cover the following topics:
 - **First findings** walkthrough, in case I could already identify bugs/vulnerabilities during the pre-review.
 - Locking the **commit hash** for the main security review.
@@ -33,7 +33,7 @@ Once you provided me with the required information, I will proceed to **pre-revi
 > ℹ️ **Important**  
 > All findings identified during the pre-review are free of charge, irrespective of you proceeding to collaborate with me or not.
 
-### 3. Main security review &ndash; Communication is key
+## 3. Main security review &ndash; Communication is key
 
 Apart from being focused on the full security assessment of your codebase, the main security review involves the following aspects:
 - A kick-off call  &ndash; optional, but highly recommended &ndash; where you provide me with **in-depth insights** into your protocol and/or a walkthrough of select parts of the codebase.  
@@ -47,7 +47,7 @@ Apart from being focused on the full security assessment of your codebase, the m
 > Despite the relentless striving to uncover all bugs/vulnerabilities within a given codebase, this process is mainly bound by time and expertise. Consequently, no security researcher including myself can guarantee 100% security and flawless future functionality after a review.  
 > A security review is no substitute for an overall security strategy, but yet an important component of it.  
 
-### 4. Mitigation review &ndash; Finalization
+## 4. Mitigation review &ndash; Finalization
 
 Once the main review has concluded, it only takes the following steps to get the best out of the issue mitigation phase:
 - Please **comment** on each bug/vulnerability outlined in the preliminary report with a link to the commit that **resolves** it or acknowledge it as "won't fix".  
@@ -61,7 +61,7 @@ Once the main review has concluded, it only takes the following steps to get the
 > Although I can understand your wish to keep the final report confidential, I'd highly appreciate your approval to publish it.
 
 
-### Extra: Ongoing security consulting &ndash; I've got your back
+## Extra: Ongoing security consulting &ndash; I've got your back
 This service is independent from the security review and can be booked separately on demand.  
 I am here to help you with your future security concerns, e.g.:
 - Deploying and initializing your protocol on-chain, i.e. **going live**.

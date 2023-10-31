@@ -20,11 +20,11 @@ nav_order: 1
 
 &nbsp;
 
-## About <a href="https://github.com/MarioPoneder/audits"><img align="right" src="https://img.shields.io/badge/Public-Reports-4258B9?style=for-the-badge" alt="Public Reports"></a>
+# About <a href="https://github.com/MarioPoneder/audits"><img align="right" src="https://img.shields.io/badge/Public-Reports-4258B9?style=for-the-badge" alt="Public Reports"></a>
 
 An introduction about me and my company. 
 
-### Decentralizing the future, block by block ...
+## Decentralizing the future, block by block ...
 Hi, I am Mario Poneder, a former software engineer who found his way into the Web3 space and gladly offer you my services as an **independent smart contract security researcher**.
 
 You might already know me by my alias 0xTheC0der, since I am active on multiple decentralized audit platforms and participating in bug bounty programs.  
@@ -35,7 +35,7 @@ You might already know me by my alias 0xTheC0der, since I am active on multiple 
 <a href="https://code4rena.com/@0xTheC0der"><img align="right" src="https://img.shields.io/badge/Code4rena_Judge-since_10%2F2023-4258B9" alt="Code4rena Judge since 10/2023"></a>
 &nbsp;
 
-### My professional journey began ...
+## My professional journey began ...
 
 … as a developer in the fields of industrial automation and [GPU-accelerated parallel computing](https://www.khronos.org/opencl/), after finishing a school focused on electronics and computer engineering.  
 Later on, while getting my master’s degree in engineering physics, I was performing particle physics simulations for a [dark matter research project](https://cresst-experiment.org/).  
