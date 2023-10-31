@@ -5,7 +5,7 @@ theme: just-the-docs
 url: https://decentra.vision/
 
 nav_external_links:
-  - title: Public Reports
+  - title: Public reports
     url: https://github.com/MarioPoneder/audits
     hide_icon: false
     opens_in_new_tab: true
