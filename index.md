@@ -1,3 +1,8 @@
+---
+title: Home
+layout: home
+---
+
 ![](./img/banner_dark.png#gh-dark-mode-only)![](./img/banner.png#gh-light-mode-only)  
 ### <sup>Represented by Mario Poneder </sup><img src="./img/profile.png" width="28px"><sup> , also known as 0xTheC0der</sup><img src="./img/icon.png" width="30px"><sup>in the Web3 security space.</sup>  
 ---
