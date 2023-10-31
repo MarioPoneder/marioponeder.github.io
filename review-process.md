@@ -9,7 +9,7 @@ A brief overview about the security review process, what to expect and how you c
 
 ## 1. Let me know about your project &ndash; Get a quote
 
-**Get in touch** with me using one of the [communication channels](#social-buttons) above and please provide me with the following information about your project:
+**Get in touch** with me using one of the [communication channels](#communication-channels) below and please provide me with the following information about your project:
 
 - [x] Link to the **source code repository** and definition of files, folders or contracts in **scope**.  
 *In case of a private repository, please invite [@MarioPoneder](https://github.com/MarioPoneder) as a collaborator.*  
