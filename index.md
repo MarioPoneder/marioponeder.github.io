@@ -5,7 +5,7 @@ nav_order: 1
 ---
 
 <picture><source srcset="./img/banner_dark.png" media="(prefers-color-scheme: dark)"/><img src="./img/banner.png"/></picture>
-### <sup>Represented by Mario Poneder </sup><img src="./img/profile.png" width="28px"><sup> , also known as 0xTheC0der </sup><img src="./img/icon.png" width="28px"><sup> .</sup>  
+### <sup>Represented by Mario Poneder&#160</sup><img src="./img/profile.png" width="28px"><sup>&#160, also known as 0xTheC0der&#160</sup><img src="./img/icon.png" width="28px"><sup>&#160.</sup>  
 ---
 
 ## Decentralizing the future, block by block ...
