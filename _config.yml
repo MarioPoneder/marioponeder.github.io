@@ -10,9 +10,9 @@ nav_external_links:
     hide_icon: false
     opens_in_new_tab: true
   
-logo: "img/logo.png"
+logo: "img/logo_dark.png"
 
 heading_anchors: false
 
-color_scheme: light
+color_scheme: dark
 
