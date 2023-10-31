@@ -1,35 +1,101 @@
+![](./img/banner_dark.png#gh-dark-mode-only)![](./img/banner.png#gh-light-mode-only)  
+### <sup>Represented by Mario Poneder </sup><img src="./img/profile.png" width="28px"><sup> , also known as 0xTheC0der</sup><img src="./img/icon.png" width="30px"><sup>in the Web3 security space.</sup>  
 ---
-title: Home
-layout: home
+<p align="right">
+<a name="social-buttons"></a>
+<a href="mailto:m.poneder@decentra.vision"><img src="./img/social/email.png" alt="Mario Poneder | DecentraVision" height="32px"/></a>&nbsp;
+<a href="https://linkedin.com/in/mario-poneder"><img src="./img/social/linked-in.png" alt="Mario Poneder | LinkedIn" height="32px"/></a>&nbsp;
+<a href="https://twitter.com/MarioPoneder"><img src="./img/social/x.png" alt="Mario Poneder | X" height="32px"/></a>&nbsp;
+<a href="https://discordapp.com/users/916806993048637521"><img src="./img/social/discord.png" alt="0xTheC0der | Discord" height="32px"/></a>&nbsp;
+<a href="https://code4rena.com/@0xTheC0der"><img src="./img/social/code4rena.png" alt="0xTheC0der | Code4rena" height="32px"/></a>&nbsp;
+<a href="https://cantina.xyz/u/0xTheC0der"><img src="./img/social/cantina.png" alt="0xTheC0der | Cantina" height="32px"/></a>
+</p>
+
+## Decentralizing the future &ndash; Block by block
+
+To do ...
+<!-- independent security researcher, link audits repo, current roles in web3 -->
+
+## The security review process &ndash; One step at a time
+A brief overview about the security review process, what to expect and how you can benefit from it.
+
+### 1. Let me know about your project &ndash; Get a quote
+
+**Get in touch** with me using one of the [communication channels](#social-buttons) above and please provide me with the following information about your project:
+
+* [x] Link to the **source code repository** and definition of files, folders or contracts in **scope**.  
+  *In case of a private repository, please invite [@MarioPoneder](https://github.com/MarioPoneder) as a collaborator.*
+* [x] Relevant specifications, **documentation** and previous audit reports, if already available depending on the current stage of your project.
+* [x] Link to the parent project, in case this is a **fork**.
+* [x] Your **projected timeline**, i.e. do you need a security review now or in a few weeks/months?
+* [x] Further **questions** or information from your side.
+
+> [!IMPORTANT]  
+> All non-public information shared with me will be treated as confidential.
+
+### 2. Preparing for kick-off &ndash; Determining our collaboration
+Once you provided me with the required information, I will proceed to **pre-review** your codebase and afterwards get back to you for scheduling a call &ndash; could also be a chat if you prefer &ndash; in order to cover the following topics:
+* [x] **First findings** walkthrough, in case I could already identify bugs/vulnerabilities during the pre-review.
+* [x] Locking the **commit hash** for the main security review.
+* [x] Breakdown of the **quote** and downpayment.  
+  *The quote is based on a severity-tiered per-finding price model. You are free to opt for a fixed hourly rate instead, if you prefer.*
+* [x] Determining if our **collaboration is the right fit** for both sides.
+* [x] Setting the **timeline** for the main security review.
+
+> [!IMPORTANT]  
+> All findings identified during the pre-review are free of charge, irrespective of you proceeding to collaborate with me or not.
+
+### 3. Main security review &ndash; Communication is key
+
+Apart from being focused on the full security assessment of your codebase, the main security review involves the following aspects:
+* [x] A kick-off call  &ndash; optional, but highly recommended &ndash; where you provide me with **in-depth insights** into your protocol and/or a walkthrough of select parts of the codebase.  
+*This will give me a headstart into the security review which usually turns out to be beneficial when identifying vulnerabilities.*
+* [x] Every time a relevant **finding** is uncovered, I will proceed to share it with you **immediately** via our dedicated communication channel &ndash; could also be a new issue in a private repository &ndash; including recommended **mitigation steps** and a runnable proof-of-concept, depending on the complexity of the finding.  
+*This way, you can already work on issue mitigation in parallel to the security review.*
+* [x] At the end of the main review, you will receive a **preliminary report** in Markdown format covering all the bugs/vulnerabilities which were identified to date.  
+*There might also be multiple non-critical findings and recommendations which are better wrapped up in a dedicated call instead of being part of the report.*
+
+> [!WARNING]  
+> Despite the relentless striving to uncover all bugs/vulnerabilities within a given codebase, this process is mainly bound by time and expertise. Consequently, no security researcher including myself can guarantee 100% security and flawless future functionality after a review.  
+> A security review is no substitute for an overall security strategy, but yet an important component of it.  
+
+### 4. Mitigation review &ndash; Finalization
+
+Once the main review has concluded, it only takes the following steps to get the best out the issue mitigation phase:
+* [x] Please **comment** on each bug/vulnerability outlined in the preliminary report with a link to the commit that **resolves** it or acknowledge it as "won't fix".  
+*Thereby, it is best practice to fix only one issue within one commit for clarity.*
+* [x] Each of your **mitigation commits** will be **reviewed** concerning correctness and security.  
+  *Note that new features, comprehensive refactoring or architectural changes are not part of the mitigation review.*
+* [x] At the end of the mitigation review, you will receive a **finalized report** in Markdown format covering all previously uncovered bugs/vulnerabilities and their reviewed mitigation measures.
+
+> [!NOTE]  
+> Although I can understand your wish to keep the final report confidential, I'd highly appreciate your approval to publish it.
+
+
+### Extra: Ongoing security consulting &ndash; I've got your back
+This service is independent from the security review and can be booked separately on demand.  
+I am here to help you with your future security concerns, e.g.:
+* [x] Deploying and initializing your protocol on-chain, i.e. **going live**.
+* [x] Reviewing new contracts and other changes on **protocol upgrades**.  
+   *Basically a light version of the above security review.*
+* [x] Bug bounty report analysis and **mitigation consulting**.
+
 ---
+<details>
+<summary>Legal info</summary>
+&nbsp;
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+| Decentra Vision e.U. | |
+| --- | --- |
+| Owner | Dipl.-Ing. Mario Poneder |
+| Address | Gstetten 22, 3350 Haag, Austria |
+| Email | m.poneder@decentra.vision |
+| Purpose of business | Information technology services for decentralized systems |
+| Company registration number | FN 575395w |
+| Commercial register court | Regional court St. Pölten |
+| VAT number | ATU 77786479 |
+</details>
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
-
-More specifically, the created site:
-
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
-
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
-
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
-
-To get started with creating a site, simply:
-
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
-
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
-
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+<p align="right">
+&copy; 2024 Decentra Vision e.U. &ndash; All rights reserved
+</p>
