@@ -16,13 +16,11 @@ nav_order: 1
 <a href="https://code4rena.com/@0xTheC0der"><img src="./img/social/code4rena.png" alt="0xTheC0der | Code4rena" width="32.58px"/></a>&nbsp;
 <a href="https://cantina.xyz/u/0xTheC0der"><picture><source srcset="./img/social/cantina_dark.png" media="(prefers-color-scheme: dark)"/><img src="./img/social/cantina.png" alt="0xTheC0der | Cantina" width="32px"/></picture></a>&nbsp;
 <a href="https://github.com/MarioPoneder"><picture><source srcset="./img/social/github_dark.png" media="(prefers-color-scheme: dark)"/><img src="./img/social/github.png" alt="Mario Poneder | GitHub" width="32px"/></picture></a>
+<a href="https://github.com/MarioPoneder/audits"><img align="left" src="https://img.shields.io/badge/Public-Reports-4258B9?style=for-the-badge" alt="Public Reports"></a>
 </p>
 
 &nbsp;
 
-# About <a href="https://github.com/MarioPoneder/audits"><img align="right" src="https://img.shields.io/badge/Public-Reports-4258B9?style=for-the-badge" alt="Public Reports"></a>
-
-An introduction about me and my company. 
 
 ## Decentralizing the future, block by block ...
 Hi, I am Mario Poneder, a former software engineer who found his way into the Web3 space and gladly offer you my services as an **independent smart contract security researcher**.
@@ -46,8 +44,3 @@ This has led me to the firm decision to pivot my career and found **Decentra Vis
 Since then, I have had a lot of amazing experiences such as exchanging knowledge with inspiring like-minded individuals, working on sophisticated codebases and spotting severe vulnerabilities.  
 All of this has contributed to finding my true passion in reviewing smart contracts to make the Web3 space safer and therefore drive adoption, while enhancing my skillset as an **independent security researcher** along the journey.
 
----
-
-<p align="right">
-&copy; 2024 Decentra Vision e.U. &ndash; All rights reserved
-</p>

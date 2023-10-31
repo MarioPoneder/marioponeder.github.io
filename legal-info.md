@@ -37,8 +37,3 @@ nav_order: 10
     </tr>
 </table>
 
----
-
-<p align="right">
-&copy; 2024 Decentra Vision e.U. &ndash; All rights reserved
-</p>

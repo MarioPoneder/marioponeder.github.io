@@ -69,9 +69,3 @@ I am here to help you with your future security concerns, e.g.:
    *Basically a light version of the above security review.*
 - Bug bounty report analysis and **mitigation consulting**.
 
-
----
-
-<p align="right">
-&copy; 2024 Decentra Vision e.U. &ndash; All rights reserved
-</p>
