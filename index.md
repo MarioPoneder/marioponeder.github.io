@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: home
+nav_order: 1
 ---
 
 <picture><source srcset="./img/banner_dark.png" media="(prefers-color-scheme: dark)"/><img src="./img/banner.png"/></picture>

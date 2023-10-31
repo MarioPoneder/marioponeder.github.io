@@ -1,6 +1,7 @@
 ---
 title: Security review process
 layout: page
+nav_order: 5
 ---
 
 ## Security review process
