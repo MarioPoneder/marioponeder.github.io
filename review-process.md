@@ -7,6 +7,8 @@ nav_order: 5
 # Security review process
 A brief overview about the security review process, what to expect and how you can benefit from it.
 
+<div align="center">
+
 ```mermaid
 graph TD;
     A[1. Let me know about<br>your project]-- Get a quote and<br>pre-review -->B[2. Preparation for kick-off];
@@ -14,6 +16,8 @@ graph TD;
     C--Preliminary report-->D[4. Mitigation review];
     D-. Further needs? .->E(Ongoing security consulting);
 ```
+
+</div>
 
 ## 1. Let me know about your project &ndash; Get a quote
 
