@@ -4,7 +4,7 @@ layout: page
 nav_exclude: true
 ---
 
-# Legal info
+## Severity matrix
 
 <table>
 <tbody>
@@ -13,7 +13,7 @@ nav_exclude: true
 <th colspan="4">Impact</th>
 </tr>
 <tr>
-<th rowspan="4" style="transform: rotate(-90.0deg);">Likelihood</th>
+<th rowspan="4"">Likelihood</th>
 <td></td>
 <th>High</th>
 <th>Medium</th>
@@ -22,12 +22,12 @@ nav_exclude: true
 <tr>
 <th>High</th>
 <td style="background-color: rgb(107, 39, 55)" align="center">Critical</td>
-<td style="background-color: rgb(220, 50, 64)" align="center">High</td>
+<td style="background-color: rgb(252, 47, 0)" align="center">High</td>
 <td style="background-color: rgb(227, 181, 5)" align="center">Medium</td>
 </tr>
 <tr>
 <th>Medium</th>
-<td style="background-color: rgb(220, 50, 64)" align="center">High</td>
+<td style="background-color: rgb(252, 47, 0)" align="center">High</td>
 <td style="background-color: rgb(227, 181, 5)" align="center">Medium</td>
 <td style="background-color: rgb(0, 105, 146)" align="center">Low</td>
 </tr>
