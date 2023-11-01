@@ -15,6 +15,8 @@ graph TD;
     D-. Further needs? .->E(Ongoing security consulting);
 ```
 
+&nbsp;
+
 ## 1. Let me know about your project &ndash; Get a quote
 
 **Get in touch** with me using one of the [communication channels](#communication-channels) below and please provide me with the following information about your project:
