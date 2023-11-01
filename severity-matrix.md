@@ -4,13 +4,13 @@ layout: page
 nav_exclude: true
 ---
 
-## Severity matrix
+## Risk severity matrix
 
 <table>
 <tbody>
 <tr>
 <th colspan="2" rowspan="2"></th>
-<th colspan="3">Impact</th>
+<th colspan="3" style="font-variant: small-caps">Impact</th>
 </tr>
 <tr>
 <th>High</th>
@@ -18,7 +18,7 @@ nav_exclude: true
 <th>Low</th>
 </tr>
 <tr>
-<th rowspan="3">Likelihood</th>
+<th rowspan="3" style="font-variant: small-caps">Likelihood</th>
 <th>High</th>
 <td style="background-color: rgb(107, 39, 55)" align="center">Critical</td>
 <td style="background-color: rgb(208, 22, 15)" align="center">High</td>
