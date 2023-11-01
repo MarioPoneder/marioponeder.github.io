@@ -4,12 +4,12 @@ layout: page
 nav_exclude: true
 ---
 
-## Risk severity matrix
+## Vulnerability risk severity assessment
 
 <table>
 <tbody>
 <tr>
-<th colspan="2" rowspan="2"></th>
+<th colspan="2" rowspan="2">Risk severity matrix</th>
 <th colspan="3" style="font-variant: small-caps">Impact</th>
 </tr>
 <tr>

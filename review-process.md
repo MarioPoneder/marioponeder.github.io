@@ -7,6 +7,13 @@ nav_order: 5
 # Security review process
 A brief overview about the security review process, what to expect and how you can benefit from it.
 
+```mermaid
+graph TD;
+    A[1. Let me know about your project]-->B[2. Preparing for kick-off];
+    B-->C{3. Main security review};
+    C-->D[4. Mitigation review];
+```
+
 ## 1. Let me know about your project &ndash; Get a quote
 
 **Get in touch** with me using one of the [communication channels](#communication-channels) below and please provide me with the following information about your project:

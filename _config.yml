@@ -20,3 +20,7 @@ heading_anchors: false
 
 color_scheme: custom_dark
 
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "10.6.0"
