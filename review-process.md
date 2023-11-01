@@ -7,12 +7,15 @@ nav_order: 5
 # Security review process
 A brief overview about the security review process, what to expect and how you can benefit from it.
 
+<div align="center">
 ```mermaid
 graph TD;
-    A[1. Let me know about your project]-->B[2. Preparing for kick-off];
-    B-->C{3. Main security review};
-    C-->D[4. Mitigation review];
+    A[1. Let me know about<br>your project]-- Get a quote and<br>pre-review -->B[2. Preparation for kick-off];
+    B--Collaboration established-->C{3. Main security review};
+    C--Preliminary report-->D[4. Mitigation review];
+    D-. Further needs? .->E(Ongoing security consulting);
 ```
+</div>
 
 ## 1. Let me know about your project &ndash; Get a quote
 
@@ -28,7 +31,7 @@ graph TD;
 > ℹ️ **Important**  
 > All non-public information shared with me will be treated as confidential.
 
-## 2. Preparing for kick-off &ndash; Determining our collaboration
+## 2. Preparation for kick-off &ndash; Determining our collaboration
 Once you provided me with the required information, I will proceed to **pre-review** your codebase and afterwards get back to you for scheduling a call &ndash; could also be a chat if you prefer &ndash; in order to cover the following topics:
 - [x] **First findings** walkthrough, in case I could already identify bugs/vulnerabilities during the pre-review.
 - [x] Locking the **commit hash** for the main security review.
