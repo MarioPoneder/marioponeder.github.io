@@ -9,25 +9,24 @@ nav_exclude: true
 <table>
 <tbody>
 <tr>
-<th></th>
-<th colspan="4">Impact</th>
+<th colspan="2" rowspan="2"></th>
+<th colspan="3">Impact</th>
 </tr>
 <tr>
-<th rowspan="4"">Likelihood</th>
-<td></td>
 <th>High</th>
 <th>Medium</th>
 <th>Low</th>
 </tr>
 <tr>
+<th rowspan="3">Likelihood</th>
 <th>High</th>
 <td style="background-color: rgb(107, 39, 55)" align="center">Critical</td>
-<td style="background-color: rgb(252, 47, 0)" align="center">High</td>
+<td style="background-color: rgb(208, 22, 15)" align="center">High</td>
 <td style="background-color: rgb(227, 181, 5)" align="center">Medium</td>
 </tr>
 <tr>
 <th>Medium</th>
-<td style="background-color: rgb(252, 47, 0)" align="center">High</td>
+<td style="background-color: rgb(208, 22, 15)" align="center">High</td>
 <td style="background-color: rgb(227, 181, 5)" align="center">Medium</td>
 <td style="background-color: rgb(0, 105, 146)" align="center">Low</td>
 </tr>
