@@ -4,8 +4,8 @@ layout: home
 nav_order: 1
 ---
 
-<picture><source srcset="./img/banner_dark.png" media="(prefers-color-scheme: dark)"/><img src="./img/banner_dark.png"/></picture>
-### <sup>Represented by Mario Poneder&nbsp;</sup><img src="./img/profile.png" width="28px"><sup>&nbsp;, known as 0xTheC0der&nbsp;</sup><img src="./img/icon.png" width="28px"><sup>&nbsp;.</sup>  
+<picture><source srcset="/img/banner_dark.png" media="(prefers-color-scheme: dark)"/><img src="/img/banner_dark.png"/></picture>
+### <sup>Represented by Mario Poneder&nbsp;</sup><img src="/img/profile.png" width="28px"><sup>&nbsp;, known as 0xTheC0der&nbsp;</sup><img src="/img/icon.png" width="28px"><sup>&nbsp;.</sup>  
 ---
 
 ## Decentralizing the future, block by block ...
