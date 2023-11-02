@@ -77,17 +77,17 @@ The severity of a bug/vulnerability is assessed based on its potential economica
       <th>High</th>
       <td align="center" style="background-color: #8D1700">Critical</td>
       <td align="center" style="background-color: #C1201A">High</td>
-      <td align="center" style="background-color: #E2B230">Medium</td>
+      <td align="center" style="background-color: #D0A52F">Medium</td>
     </tr>
     <tr>
       <th>Medium</th>
       <td align="center" style="background-color: #C1201A">High</td>
-      <td align="center" style="background-color: #E2B230">Medium</td>
+      <td align="center" style="background-color: #D0A52F">Medium</td>
       <td align="center" style="background-color: #48639C">Low</td>
     </tr>
     <tr>
       <th>Low</th>
-      <td align="center" style="background-color: #E2B230">Medium</td>
+      <td align="center" style="background-color: #D0A52F">Medium</td>
       <td align="center" style="background-color: #48639C">Low</td>
       <td align="center" style="background-color: #829399">Non-Critical</td>
     </tr>
