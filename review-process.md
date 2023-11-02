@@ -10,7 +10,7 @@ A brief overview about the security review process, what to expect and how you c
 
 ```mermaid
 graph TD;
-    A[1. Tell me about<br>your project]-- Get a quote and<br>pre-review -->B[2. Preparation for kick-off];
+    A[1. Tell me about your project]-- Get a quote and<br>pre-review -->B[2. Preparation for kick-off];
     B--Collaboration established-->C{3. Main security review};
     C--Preliminary report-->D[4. Mitigation review];
     D-. Further needs? .->E(Ongoing security consulting);
