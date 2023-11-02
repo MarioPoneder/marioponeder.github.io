@@ -2,6 +2,7 @@
 title: Security review process
 layout: page
 nav_order: 5
+has_children: true
 ---
 
 # Security review process
@@ -31,17 +32,21 @@ graph TD;
 > ℹ️ **Important**  
 > All non-public information shared with me will be treated as confidential.
 
+&nbsp;
+
 ## 2. Preparation for kick-off &ndash; Determining our collaboration
 Once you provided me with the required information, I will proceed to **pre-review** your codebase and afterwards get back to you for scheduling a call &ndash; could also be a chat if you prefer &ndash; in order to cover the following topics:
 - [x] **First findings** walkthrough, in case I could already identify bugs/vulnerabilities during the pre-review.
 - [x] Locking the **commit hash** for the main security review.
-- [x] Breakdown of the **quote** and downpayment.  
+- [x] Breakdown of the **quote** and downpayment. See also [Price model / severity matrix](/price-model.html).
   *The quote is based on a severity-tiered per-finding price model. You are free to opt for a fixed hourly rate instead, if you prefer.*
 - [x] Determining if our **collaboration is the right fit** for both sides.
 - [x] Setting the **timeline** for the main security review.
 
 > ℹ️ **Important**  
 > All findings identified during the pre-review are free of charge, irrespective of you proceeding to collaborate with me or not.
+
+&nbsp;
 
 ## 3. Main security review &ndash; Communication is key
 
@@ -57,6 +62,8 @@ Apart from being focused on the full security assessment of your codebase, the m
 > Despite the relentless striving to uncover all bugs/vulnerabilities within a given codebase, this process is mainly bound by time and expertise. Consequently, no security researcher including myself can guarantee 100% security and flawless future functionality after a review.  
 > A security review is no substitute for an overall security strategy, but yet an important component of it.  
 
+&nbsp;
+
 ## 4. Mitigation review &ndash; Finalization
 
 Once the main review has concluded, it only takes the following steps to get the best out of the issue mitigation phase:
@@ -70,6 +77,7 @@ Once the main review has concluded, it only takes the following steps to get the
 > 📝 **Note**  
 > Although I can understand your wish to keep the final report confidential, I'd highly appreciate your approval to publish it.
 
+&nbsp;
 
 ## Extra: Ongoing security consulting &ndash; I've got your back
 This service is independent from the security review and can be booked separately on demand.  
