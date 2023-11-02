@@ -10,7 +10,7 @@ nav_order: 1
 The **per-finding** cost structure of a security review is given by a **base price** which is tiered with respect to severity.  
 The base price, which is presented in the **quote**, is defined as the maximum price to be paid for an identified vulnerability.
 
-<table>
+<table style="min-width:30%" align="center">
   <tbody>
     <tr>
       <th>Severity</th>
@@ -61,7 +61,7 @@ It is possible to opt for a traditional price model where I estimate the require
 
 The severity of a bug/vulnerability is assessed based on its potential economical impact and likelihood of incident.
 
-<table>
+<table style="min-width:30%" align="center">
   <tbody>
     <tr>
       <th colspan="2" rowspan="2">Risk severity matrix</th>
