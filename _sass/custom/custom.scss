@@ -1,12 +1,20 @@
+.site-footer {
+    visibility: hidden;
+  }
+
+btn-in-line {
+    vertical-align: middle;
+  }
+
 @media  (min-width: 50rem) {
 .site-footer {
     visibility: hidden;
   }
-}
 
-.site-footer {
-    visibility: hidden;
+  .btn-in-line {
+    vertical-align: top;
   }
+}
 
 code.language-mermaid { 
     display: flex !important;
