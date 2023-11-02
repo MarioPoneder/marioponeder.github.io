@@ -13,10 +13,6 @@ nav_external_links:
     url: https://github.com/MarioPoneder/audits
     hide_icon: false
     opens_in_new_tab: true
-  - title: Privacy policy
-    url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
-    hide_icon: false
-    opens_in_new_tab: true
   
 logo: "img/logo_dark.png"
 
