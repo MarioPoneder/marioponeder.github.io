@@ -1,24 +1,7 @@
 .site-footer {
     visibility: hidden;
   }
-
-.btn-in-line {
-    vertical-align: middle;
-  }
-
-@media  (min-width: 50rem) {
-  .site-footer {
-    visibility: hidden;
-  }
-}
-
-@media  (min-width: 31.25rem) {
-  .btn-in-line {
-    vertical-align: top;
-  }
-}
-
-
+ 
 code.language-mermaid { 
     display: flex !important;
     justify-content: center; 
