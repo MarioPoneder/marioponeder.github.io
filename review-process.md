@@ -10,7 +10,7 @@ A brief overview about the security review process, what to expect and how you c
 
 ```mermaid
 graph TD;
-    A[1. Let me know about<br>your project]-- Get a quote and<br>pre-review -->B[2. Preparation for kick-off];
+    A[1. Tell me about<br>your project]-- Get a quote and<br>pre-review -->B[2. Preparation for kick-off];
     B--Collaboration established-->C{3. Main security review};
     C--Preliminary report-->D[4. Mitigation review];
     D-. Further needs? .->E(Ongoing security consulting);
@@ -18,7 +18,7 @@ graph TD;
 
 &nbsp;
 
-## 1. Let me know about your project &ndash; <span class="fs-4" style="vertical-align: top">[Get a quote](https://tally.so/r/3lOGb6){: .btn .btn-blue }</span>
+## 1. Tell me about your project &ndash; <span class="fs-4" style="vertical-align: top">[Get a quote](https://tally.so/r/3lOGb6){: .btn .btn-blue }</span>
 
 **Get in touch** with me using [this form](https://tally.so/r/3lOGb6) or one of the [communication channels](#communication-channels) below and please provide me with the following information about your project:
 
