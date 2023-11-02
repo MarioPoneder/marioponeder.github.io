@@ -1,5 +1,5 @@
 ---
-title: Price model / severity matrix
+title: Price model &ndash; Severity matrix
 layout: page
 parent: Security review process
 nav_order: 1
