@@ -1,7 +1,7 @@
 ---
 title: Legal info
 layout: page
-nav_order: 10
+nav_exclude: true
 ---
 
 # Legal info
