@@ -73,7 +73,7 @@ The severity of a bug/vulnerability is assessed based on its potential economica
       <th>Low</th>
     </tr>
     <tr>
-      <th rowspan="3" style="writing-mode: vertical-rl; transform: rotate(180deg); min-width: 40px;">Likelihood</th>
+      <th rowspan="3" style="writing-mode: vertical-rl; transform: rotate(180deg); min-width: 45px;">Likelihood</th>
       <th>High</th>
       <td align="center" style="background-color: #8D1700">Critical</td>
       <td align="center" style="background-color: #C1201A">High</td>
