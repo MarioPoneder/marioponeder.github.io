@@ -18,7 +18,7 @@ graph TD;
 
 &nbsp;
 
-## 1. Let me know about your project &ndash; <span class="fs-5">[Get a quote](https://tally.so/r/3lOGb6){: .btn .btn-blue }</span>
+## 1. Let me know about your project &ndash; <span class="fs-4" style="vertical-align: top">[Get a quote](https://tally.so/r/3lOGb6){: .btn .btn-blue }</span>
 
 **Get in touch** with me using [this form](https://tally.so/r/3lOGb6) or one of the [communication channels](#communication-channels) below and please provide me with the following information about your project:
 
