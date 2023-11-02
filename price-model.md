@@ -41,19 +41,19 @@ The base price, which is presented in the **quote**, is defined as the maximum p
 
 \* if non-critical findings are required to be included in the report instead of being discussed in a call.  
 
-## What determines the base price?
-The **base price** is mainly determined by the following aspects:
+**What determines the base price?**
+The base price is mainly determined by the following aspects:
 * Size and complexity of the codebase
 * Use of external contracts / libraries
 * Interactions with other protocols
 * Criticality based on projected total value locked
 
-## What if you disagree with a finding or its severity assessment?
+**What if you disagree with a finding or its severity assessment?**
 During the mitigation review, we can openly discuss such findings in order to find common ground.  
 A prime example for such a finding is "Centralization risk", because as a security researcher it is my duty to point this out
 although some centralized aspects about your protocol might be intended. Therefore you won't be charged in that case.  
   
-## What if you prefer an upfront fixed price for the whole security review?
+**What if you prefer an upfront fixed price for the whole security review?**
 It is possible to opt for a traditional price model where I estimate the required amount of time in advance and multiply it with my hourly rate.
 
 
