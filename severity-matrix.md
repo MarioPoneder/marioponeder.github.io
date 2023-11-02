@@ -38,3 +38,38 @@ nav_exclude: true
     </tr>
   </tbody>
 </table>
+
+
+## Severity-tiered price model &ndash; Only pay for what I find
+
+<table>
+  <tbody>
+    <tr>
+      <th>Severity</th>
+      <th>Percentage of base price</th>
+    </tr>
+    <tr>
+      <td align="center" style="background-color: #8D1700">Critical</td>
+      <td align="right">100%</td>
+    </tr>
+    <tr>
+      <td align="center" style="background-color: #C1201A">High</td>
+      <td align="right">70%</td>
+    </tr>
+    <tr>
+      <td align="center" style="background-color: #E2B230">Medium</td>
+      <td align="right">30%</td>
+    </tr>
+    <tr>
+      <td align="center" style="background-color: #48639C">Low</td>
+      <td align="right">10%</td>
+    </tr>
+    <tr>
+      <td align="center" style="background-color: #829399">Non-Critical</td>
+      <td align="right">0%<sup>*</sup></td>
+    </tr>
+  </tbody>
+</table>
+* 5%, if non-critical findings are required to be included in the report instead of being discussed in a call.
+
+
