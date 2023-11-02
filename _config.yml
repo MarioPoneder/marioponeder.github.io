@@ -5,6 +5,10 @@ theme: just-the-docs
 url: https://decentra.vision/
 
 nav_external_links:
+  - title: Get a quote
+    url: https://tally.so/r/3lOGb6
+    hide_icon: false
+    opens_in_new_tab: true
   - title: Public reports
     url: https://github.com/MarioPoneder/audits
     hide_icon: false

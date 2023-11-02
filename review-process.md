@@ -18,9 +18,9 @@ graph TD;
 
 &nbsp;
 
-## 1. Let me know about your project &ndash; Get a quote
+## 1. Let me know about your project &ndash; [Get a quote](https://tally.so/r/3lOGb6){: .btn .btn-blue }
 
-**Get in touch** with me using one of the [communication channels](#communication-channels) below and please provide me with the following information about your project:
+**Get in touch** with me using [this form](https://tally.so/r/3lOGb6) or one of the [communication channels](#communication-channels) below and please provide me with the following information about your project:
 
 - [x] Link to the **source code repository** and definition of files, folders or contracts in **scope**.  
 *In case of a private repository, please invite [@MarioPoneder](https://github.com/MarioPoneder) as a collaborator.*  
@@ -35,7 +35,7 @@ graph TD;
 &nbsp;
 
 ## 2. Preparation for kick-off &ndash; Determining our collaboration
-Once you provided me with the required information, I will proceed to **pre-review** your codebase and afterwards get back to you for scheduling a call &ndash; could also be a chat if you prefer &ndash; in order to cover the following topics:
+Once you provided me with the required information, I will proceed to **pre-review** your codebase and get back to you for scheduling a call &ndash; could also be a chat if you prefer &ndash; in order to cover the following topics:
 - [x] **First findings** walkthrough, in case I could already identify bugs/vulnerabilities during the pre-review.
 - [x] Locking the **commit hash** for the main security review.
 - [x] Breakdown of the **quote** and downpayment. See also [Price model &ndash; Severity matrix](/price-model.html).  
