@@ -39,7 +39,7 @@ The base price, which is presented in the **quote**, is defined as the maximum p
   </tbody>
 </table>
 
-\* if non-critical findings are required to be included in the report instead of being discussed in a call.  
+\* 5%, if non-critical findings are required to be included in the report instead of being discussed in a call.  
 
 **What determines the base price?**
 The base price is mainly determined by the following aspects:
