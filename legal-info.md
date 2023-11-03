@@ -1,6 +1,7 @@
 ---
 title: Legal info
 layout: page
+permalink: /legal-info
 nav_exclude: true
 ---
 

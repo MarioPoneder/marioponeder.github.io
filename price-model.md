@@ -1,14 +1,15 @@
 ---
 title: Price model &ndash; Severity matrix
 layout: page
+permalink: /price-model
 parent: Security review process
 nav_order: 1
 ---
 
 # Price model &ndash; Only pay for what I find
 
-The **per-finding** cost structure of a security review is given by a **base price** which is tiered with respect to severity.  
-The base price, which is presented in the **quote**, is defined as the maximum price to be paid for an identified vulnerability.
+The **per-finding** cost structure of a security review is given by a **base price** that is tiered with respect to severity.  
+This base price, which will be presented in the **quote**, is defined as the maximum price to be paid for an identified vulnerability.
 
 <table style="min-width:30%" align="center">
   <tbody>

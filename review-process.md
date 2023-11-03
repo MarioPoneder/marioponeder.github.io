@@ -1,6 +1,7 @@
 ---
 title: Security review process
 layout: page
+permalink: /review-process
 nav_order: 5
 has_children: true
 ---
@@ -38,7 +39,7 @@ graph TD;
 Once you provided me with the required information, I will proceed to **pre-review** your codebase and get back to you for scheduling a call &ndash; could also be a chat if you prefer &ndash; in order to cover the following topics:
 - [x] **First findings** walkthrough, in case I could already identify bugs/vulnerabilities during the pre-review.
 - [x] Locking the **commit hash** for the main security review.
-- [x] Breakdown of the **quote** and downpayment. See also [Price model &ndash; Severity matrix](/price-model.html).  
+- [x] Breakdown of the **quote** and downpayment. See also [Price model &ndash; Severity matrix](/price-model).  
   *The quote is based on a severity-tiered per-finding price model. You are free to opt for a fixed hourly rate instead, if you prefer.*
 - [x] Determining if our **collaboration is the right fit** for both sides.
 - [x] Setting the **timeline** for the main security review.
