@@ -9,6 +9,9 @@ nav_exclude: true
 
 <table>
     <tr>
+        <th colspan="2">Decentra Vision e.U.</th>
+    </tr>
+    <tr>
         <th>Owner</th>
         <td>Dipl.-Ing. Mario Poneder</td>
     </tr>
