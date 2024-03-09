@@ -13,6 +13,10 @@ nav_external_links:
     url: https://github.com/MarioPoneder/audits
     hide_icon: false
     opens_in_new_tab: true
+  - title: FindAudit profile
+    url: https://findaudit.decentra.vision/
+    hide_icon: false
+    opens_in_new_tab: true
   
 logo: "img/logo_dark.png"
 
