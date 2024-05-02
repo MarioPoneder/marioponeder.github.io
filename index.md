@@ -17,7 +17,7 @@ You might already know me by my alias 0xTheC0der, since I am active on multiple 
 > With my continuous contribution to the Web3 security landscape, I want to help innovators like you to build a decentralized future, block by block, and therefore drive adoption.
 
 <a href="https://code4rena.com/@0xTheC0der"><img align="right" src="https://img.shields.io/badge/Code4rena_Judge-since_10%2F2023-7549FE" alt="Code4rena Judge since 10/2023"></a>  
-<a href="https://cantina.xyz/u/0xTheC0der"><img align="right" src="https://img.shields.io/badge/Spearbit_Member-since_04%2F2024-25F2D0" alt="Spearbit Member since 04/2024"></a>
+<a href="https://cantina.xyz/u/0xTheC0der"><img align="right" src="https://img.shields.io/badge/Spearbit_Member-since_04%2F2024-1BB399" alt="Spearbit Member since 04/2024"></a>
 &nbsp;
 
 ## My professional journey began ...
