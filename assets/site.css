@@ -659,8 +659,9 @@ a:hover .arrow {
   font-size: 0.875rem;
   max-width: 510px;
 }
-.work-bottom .text-link {
-  white-space: nowrap;
+.work-bottom .button {
+  flex: none;
+  max-width: 100%;
 }
 .expertise-section .section-heading {
   align-items: start;
@@ -1349,7 +1350,7 @@ a:hover .arrow {
   .work-bottom {
     align-items: start;
     flex-direction: column;
-    gap: 7px;
+    gap: 20px;
   }
   .work-bottom p {
     font-size: 0.875rem;
