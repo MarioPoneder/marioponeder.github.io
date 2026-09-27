@@ -1262,12 +1262,13 @@ a:hover .arrow {
     margin-left: auto;
     white-space: nowrap;
   }
-  .art-research,
-  .art-bottom > span:first-child {
+  .art-research {
     display: none;
   }
   .art-bottom {
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px 16px;
     margin-top: 0;
     padding-top: 12px;
   }
