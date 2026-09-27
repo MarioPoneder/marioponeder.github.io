@@ -1,0 +1,87 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="640"
+  height="640"
+  viewBox="0 0 640 640"
+  fill="none"
+>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#8EA0F3" stroke-opacity=".11" />
+    </pattern>
+    <g id="cube">
+      <path d="M0-38 66 0 0 38-66 0Z" fill="#6C82E3" stroke="#AEBBFA" />
+      <path d="M-66 0 0 38V112L-66 74Z" fill="#344A9C" stroke="#8195E0" />
+      <path d="M0 38 66 0V74L0 112Z" fill="#233A86" stroke="#8195E0" />
+      <path
+        d="M-57 13-9 41M-57 23-9 51M-57 33-9 61"
+        stroke="#8EA0F3"
+        stroke-opacity=".35"
+      />
+    </g>
+  </defs>
+  <path fill="url(#grid)" d="M0 0H640V640H0z" />
+  <g stroke="#8EA0F3" stroke-opacity=".2">
+    <path d="m320 86 250 144v289L320 664 70 519V230Z" />
+    <path d="m320 146 198 114v229L320 604 122 489V260Z" />
+    <path d="M320 86v578M70 230l500 289M570 230 70 519" />
+  </g>
+  <g stroke="#A3B5FF" stroke-width="1.5">
+    <path
+      d="m170 244 150-87 151 87v175l-151 87-150-87Z"
+      stroke-dasharray="5 7"
+      opacity=".45"
+    />
+    <path d="m170 314 150 87 151-87M320 401v105M170 244v70M471 244v70" />
+    <path d="m170 314 150-87 151 87" opacity=".5" />
+  </g>
+  <use href="#cube" transform="translate(320 143) scale(.68)" />
+  <use href="#cube" transform="translate(168 231) scale(.68)" />
+  <use href="#cube" transform="translate(472 231) scale(.68)" />
+  <path
+    d="m320 236 103 59-103 60-103-60Z"
+    fill="#8B9DEB"
+    stroke="#D2DAFF"
+    stroke-width="1.4"
+  />
+  <path
+    d="m217 295 103 60v119l-103-59Z"
+    fill="#435DB8"
+    stroke="#AEBEFF"
+    stroke-width="1.4"
+  />
+  <path
+    d="m320 355 103-60v120l-103 59Z"
+    fill="#2A4298"
+    stroke="#AEBEFF"
+    stroke-width="1.4"
+  />
+  <path d="m320 259 65 37-65 38-65-38Z" stroke="#E4E9FF" stroke-opacity=".65" />
+  <path
+    d="m298 295 16 10 28-18"
+    stroke="#E9F4C8"
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <g stroke="#C2CEFF" stroke-opacity=".5">
+    <path
+      d="m231 329 73 42M231 344l73 42M231 359l73 42M231 374l73 42M231 389l73 42"
+    />
+    <path d="m335 370 72-41v70l-72 41Z" />
+    <path d="m335 387 72-41M335 405l72-41M335 422l72-41" />
+  </g>
+  <use href="#cube" transform="translate(168 415) scale(.68)" />
+  <use href="#cube" transform="translate(472 415) scale(.68)" />
+  <use href="#cube" transform="translate(320 503) scale(.68)" />
+  <g fill="#DDF2B3">
+    <circle cx="170" cy="333" r="4" />
+    <circle cx="471" cy="333" r="4" />
+    <circle cx="320" cy="213" r="4" />
+  </g>
+  <g stroke="#A3B5FF" stroke-opacity=".8">
+    <path
+      d="M32 40h16m-8-8v16M592 40h16m-8-8v16M32 600h16m-8-8v16M592 600h16m-8-8v16"
+    />
+  </g>
+</svg>

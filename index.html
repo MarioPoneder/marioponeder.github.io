@@ -1,0 +1,1248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Decentra Vision - On-chain security</title>
+    <meta
+      name="description"
+      content="Independent smart contract security research by Mario Poneder (0xTheC0der). Explore public engagements across Rust, Solidity, Cairo, DeFi and cross-chain systems."
+    />
+    <meta name="theme-color" content="#0c111a" />
+    <link rel="canonical" href="https://decentra.vision/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Decentra Vision" />
+    <meta property="og:title" content="Decentra Vision - On-chain security" />
+    <meta
+      property="og:description"
+      content="Independent smart contract security research by Mario Poneder (0xTheC0der). Explore public engagements across Rust, Solidity, Cairo, DeFi and cross-chain systems."
+    />
+    <meta property="og:url" content="https://decentra.vision/" />
+    <meta
+      property="og:image"
+      content="https://decentra.vision/img/banner_dark.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Decentra Vision - On-chain security"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@MarioPoneder" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link
+      rel="preload"
+      href="/assets/fonts/manrope-variable.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/assets/site.css?v=6acc45cb9e0b" />
+    <script src="/assets/site.js?v=b2ff38e8fdd3" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner wrap">
+        <a class="brand" href="/" aria-label="Decentra Vision home"
+          ><img
+            src="/img/logo_dark.png"
+            width="228"
+            height="46"
+            alt="Decentra Vision"
+        /></a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="navigation"
+          aria-expanded="false"
+          hidden
+        >
+          Menu +
+        </button>
+        <nav class="navigation" id="navigation" aria-label="Main navigation">
+          <a href="/#work">Selected work</a><a href="/#expertise">Expertise</a
+          ><a href="/#about">About</a
+          ><a class="nav-contact" href="/#contact"
+            >Let's talk <span class="arrow" aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent on-chain security</p>
+          <h1 id="hero-title">
+            Securing the<br /><span>decentralized</span><br />future,<small
+              >block by block</small
+            >
+          </h1>
+          <p class="hero-intro">
+            I'm <strong>Mario Poneder</strong>, an independent security
+            researcher. I help teams find the vulnerabilities that matter —
+            across smart contracts, protocols, and the systems connecting them.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#work"
+              >Explore selected work
+              <span class="arrow" aria-hidden="true">↗</span></a
+            ><a class="text-link" href="mailto:m.poneder@decentra.vision"
+              >Get in touch <span class="arrow" aria-hidden="true">↗</span></a
+            >
+          </div>
+          <a class="hero-signature" href="#about"
+            ><img src="/img/profile.png" width="37" height="37" alt="" /><span
+              ><strong>Mario Poneder</strong> / 0xTheC0der<br />Founder,
+              Decentra Vision</span
+            ></a
+          >
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-top">
+            <span>Decentra Vision / Research</span><span>EST. 2022</span>
+          </div>
+          <img
+            class="art-image"
+            src="/assets/network.svg"
+            width="640"
+            height="640"
+            alt=""
+            fetchpriority="high"
+          />
+          <div class="art-bottom">
+            <span>On-chain security.</span><span>Block by block. ↗</span>
+          </div>
+        </div>
+      </section>
+      <div class="wrap">
+        <div class="expertise-strip" aria-label="Experience at a glance">
+          <div>
+            <span class="mono">Independent since</span><strong>2022</strong>
+          </div>
+          <div>
+            <span class="mono">Core languages</span
+            ><strong>Rust · Solidity · Cairo</strong>
+          </div>
+          <div>
+            <span class="mono">Research focus</span
+            ><strong>DeFi & on-chain systems</strong>
+          </div>
+          <div>
+            <span class="mono">Beyond the code</span
+            ><strong>Engineering & physics</strong>
+          </div>
+        </div>
+        <div class="collaborations">
+          <p class="mono">Selected security teams I've collaborated with</p>
+          <div class="collaborator-list" aria-label="Security collaborators">
+            <a
+              class="collaborator-logo zenith"
+              href="https://www.zenith.security/"
+              aria-label="Zenith website"
+              ><img
+                src="/assets/logos/zenith-on-dark.svg"
+                width="168"
+                height="51"
+                alt="Zenith"
+                loading="lazy"
+            /></a>
+            <a
+              class="collaborator-logo spearbit"
+              href="https://spearbit.com/"
+              aria-label="Spearbit website"
+              ><img
+                src="/assets/logos/spearbit-on-dark.svg"
+                width="194"
+                height="38"
+                alt="Spearbit"
+                loading="lazy"
+            /></a>
+            <a
+              class="collaborator-logo oak"
+              href="https://www.oaksecurity.io/"
+              aria-label="Oak Security website"
+              ><img
+                src="/assets/logos/oak-on-dark.svg"
+                width="73"
+                height="46"
+                alt=""
+                loading="lazy"
+              /><span>Oak Security</span></a
+            >
+            <a
+              class="collaborator-logo bailsec"
+              href="https://bailsec.io/"
+              aria-label="BailSec website"
+              ><img
+                src="/assets/logos/bailsec-on-dark.svg"
+                width="136"
+                height="66"
+                alt="BailSec"
+                loading="lazy"
+            /></a>
+            <details class="other-collaborators">
+              <summary aria-controls="other-companies">
+                &amp; others <span aria-hidden="true">+</span>
+              </summary>
+              <div class="collaborator-popover" id="other-companies">
+                <p class="mono">More security teams</p>
+                <ul>
+                  <li>
+                    <a href="https://www.pashov.com/">Pashov Audit Group ↗</a>
+                  </li>
+                  <li><a href="https://www.auditone.io/">AuditOne ↗</a></li>
+                  <li>
+                    <a href="https://github.com/Torii-Security"
+                      >Torii Security ↗</a
+                    >
+                  </li>
+                  <li><a href="https://trustsec.xyz/">Trust Security ↗</a></li>
+                  <li><a href="https://www.shieldify.org/">Shieldify ↗</a></li>
+                </ul>
+                <p class="mono">Platforms &amp; judging</p>
+                <ul>
+                  <li><a href="https://www.cantina.security/">Cantina ↗</a></li>
+                  <li><a href="https://code4rena.com/">Code4rena ↗</a></li>
+                  <li><a href="https://sherlock.xyz/">Sherlock ↗</a></li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+      <section
+        class="section work-section"
+        id="work"
+        aria-labelledby="work-title"
+      >
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">01 / Selected work</p>
+              <h2 id="work-title">Experience, on the record.</h2>
+            </div>
+            <p>
+              Selected work across DeFi and core infrastructure, ordered by
+              engagement date, newest first. My experience also includes
+              Substrate and NEAR.
+            </p>
+          </div>
+          <div class="work-toolbar">
+            <div
+              class="filters"
+              role="group"
+              aria-label="Filter engagements by language"
+              hidden
+            >
+              <button
+                class="filter"
+                type="button"
+                data-filter="all"
+                aria-pressed="true"
+              >
+                All work</button
+              ><button
+                class="filter"
+                type="button"
+                data-filter="rust"
+                aria-pressed="false"
+              >
+                Rust</button
+              ><button
+                class="filter"
+                type="button"
+                data-filter="solidity"
+                aria-pressed="false"
+              >
+                Solidity</button
+              ><button
+                class="filter"
+                type="button"
+                data-filter="cairo"
+                aria-pressed="false"
+              >
+                Cairo
+              </button>
+            </div>
+            <p
+              class="work-count"
+              id="work-count"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              14 selected engagements
+            </p>
+          </div>
+          <div class="project-list">
+            <article
+              class="project"
+              data-language="rust"
+              aria-labelledby="project-solomon"
+            >
+              <div class="project-date">
+                <time datetime="2026-08">Aug 2026</time><span>2.4 weeks</span>
+              </div>
+              <a
+                class="project-site"
+                href="https://solomonlabs.org/"
+                aria-label="Solomon Labs website"
+              >
+                <span class="project-logo-frame logo-on-light"
+                  ><img
+                    class="project-logo"
+                    src="/assets/logos/solomon.svg"
+                    width="56"
+                    height="56"
+                    alt=""
+                    loading="lazy"
+                /></span>
+                <div class="project-name">
+                  <h3 id="project-solomon">
+                    Solomon Labs
+                    <span class="website-arrow" aria-hidden="true">↗</span>
+                  </h3>
+                  <span>Reserve-backed stablecoin</span>
+                </div>
+              </a>
+              <p class="project-scope">Settlement · Cross-chain · Token-2022</p>
+              <div class="project-meta">
+                <span class="tag">Rust / SVM</span><span>Zenith · Team</span>
+              </div>
+              <a
+                class="project-destination"
+                href="https://github.com/zenith-security/reports/blob/main/reports/Zenith%20Audit%20Report%20-%20Solomon.pdf"
+                aria-label="Read Solomon Labs report: Reserve-backed stablecoin, 2.4 weeks"
+                ><span class="arrow" aria-hidden="true">↗</span
+                ><span class="destination-label">Report</span></a
+              >
+            </article>
+
+            <article
+              class="project"
+              data-language="solidity"
+              aria-labelledby="project-interfold"
+            >
+              <div class="project-date">
+                <time datetime="2026-07">Jul 2026</time><span>2.6 weeks</span>
+              </div>
+              <a
+                class="project-site"
+                href="https://www.theinterfold.com/"
+                aria-label="Interfold website"
+              >
+                <span class="project-logo-frame"
+                  ><img
+                    class="project-logo"
+                    src="/assets/logos/interfold.webp"
+                    width="56"
+                    height="56"
+                    alt=""
+                    loading="lazy"
+                /></span>
+                <div class="project-name">
+                  <h3 id="project-interfold">
+                    Interfold
+                    <span class="website-arrow" aria-hidden="true">↗</span>
+                  </h3>
+                  <span>Encrypted execution protocol</span>
+                </div>
+              </a>
+              <p class="project-scope">FHE · ZK proofs · Staking · Slashing</p>
+              <div class="project-meta">
+                <span class="tag">Solidity / EVM</span
+                ><span>Zenith · Team</span>
+              </div>
+              <a
+                class="project-destination"
+                href="https://github.com/zenith-security/reports/blob/main/reports/Interfold%20Encrypted%20Execution%20Protocol%20-%20Zenith%20Audit%20Report.pdf"
+                aria-label="Read Interfold report: Encrypted execution protocol, 2.6 weeks"
+                ><span class="arrow" aria-hidden="true">↗</span
+                ><span class="destination-label">Report</span></a
+              >
+            </article>
+            <article
+              class="project"
+              data-language="rust"
+              aria-labelledby="project-jupiter"
+            >
+              <div class="project-date">
+                <time datetime="2026-04">Apr 2026</time><span>1.4 weeks</span>
+              </div>
+              <a
+                class="project-site"
+                href="https://jup.ag/"
+                aria-label="Jupiter website"
+                ><span class="project-logo-frame"
+                  ><img
+                    class="project-logo"
+                    src="/assets/logos/jupiter.webp"
+                    width="56"
+                    height="56"
+                    alt=""
+                    loading="lazy"
+                /></span>
+                <div class="project-name">
+                  <h3 id="project-jupiter">
+                    Jupiter
+                    <span class="website-arrow" aria-hidden="true">↗</span>
+                  </h3>
+                  <span>Prediction markets</span>
+                </div></a
+              >
+              <p class="project-scope">
+                Escrow · Fractional contracts · Refunds
+              </p>
+              <div class="project-meta">
+                <span class="tag">Rust / SVM</span><span>Zenith · Team</span>
+              </div>
+              <a
+                class="project-destination"
+                href="https://github.com/MarioPoneder/audits#team-engagements"
+                aria-label="View Jupiter portfolio entry: Prediction markets, 1.4 weeks"
+                ><span class="arrow" aria-hidden="true">↗</span
+                ><span class="destination-label">Portfolio</span></a
+              >
+            </article>
+            <article
+              class="project"
+              data-language="solidity"
+              aria-labelledby="project-zerox"
+            >
+              <div class="project-date">
+                <time datetime="2026-01">Jan 2026</time><span>0.8 weeks</span>
+              </div>
+              <a
+                class="project-site"
+                href="https://0x.org/"
+                aria-label="0x website"
+                ><span class="project-logo-frame"
+                  ><img
+                    class="project-logo"
+                    src="/assets/logos/zerox.webp"
+                    width="56"
+                    height="56"
+                    alt=""
+                    loading="lazy"
+                /></span>
+                <div class="project-name">
+                  <h3 id="project-zerox">
+                    0x <span class="website-arrow" aria-hidden="true">↗</span>
+                  </h3>
+                  <span>CrossChainReceiver update</span>
+                </div></a
+              >
+              <p class="project-scope">Signatures · Proxies · Multicall</p>
+              <div class="project-meta">
+                <span class="tag">Solidity / EVM</span
+                ><span>BailSec · Team</span>
+              </div>
+              <a
+                class="project-destination"
+                href="https://github.com/bailsec/BailSec/blob/main/Bailsec%20-%200x%20-%20CrossChainReceiver%20(Update)%20-%20Final%20Report.pdf"
+                aria-label="Read 0x report: CrossChainReceiver update, 0.8 weeks"
+                ><span class="arrow" aria-hidden="true">↗</span
+                ><span class="destination-label">Report</span></a
+              >
+            </article>
+            <article
+              class="project"
+              data-language="rust"
+              aria-labelledby="project-ondo"
+            >
+              <div class="project-date">
+                <time datetime="2025-11">Nov 2025</time><span>2 weeks</span>
+              </div>
+              <a
+                class="project-site"
+                href="https://ondo.finance/"
+                aria-label="Ondo Finance website"
+                ><span class="project-logo-frame"
+                  ><img
+                    class="project-logo"
+                    src="/assets/logos/ondo.webp"
+                    width="56"
+                    height="56"
+                    alt=""
+                    loading="lazy"
+                /></span>
+                <div class="project-name">
+                  <h3 id="project-ondo">
+                    Ondo Finance
+                    <span class="website-arrow" aria-hidden="true">↗</span>
+                  </h3>
+                  <span>Global Markets on Solana</span>
+                </div></a
+              >
+              <p class="project-scope">Swaps · Compliance · Signatures</p>
+              <div class="project-meta">
+                <span class="tag">Rust / SVM</span><span>Spearbit · Team</span>
+              </div>
+              <a
+                class="project-destination"
+                href="https://cantina.xyz/portfolio/c87e6cc2-6fa2-430b-bd7e-44f8505e50c7"
+                aria-label="Read Ondo Finance report: Global Markets on Solana, 2 weeks"
+                ><span class="arrow" aria-hidden="true">↗</span
+                ><span class="destination-label">Report</span></a
+              >
+            </article>
+            <article
+              class="project"
+              data-language="cairo"
+              aria-labelledby="project-starkware"
+            >
+              <div class="project-date">
+                <time datetime="2025-10">Oct 2025</time><span>3.6 weeks</span>
+              </div>
+              <a
+                class="project-site"
+                href="https://starkware.co/"
+                aria-label="StarkWare website"
+                ><span class="project-logo-frame logo-on-light"
+                  ><img
+                    class="project-logo"
+                    src="/assets/logos/starkware.svg"
+                    width="56"
+                    height="56"
+                    alt=""
+                    loading="lazy"
+                /></span>
+                <div class="project-name">
+                  <h3 id="project-starkware">
+                    StarkWare
+                    <span class="website-arrow" aria-hidden="true">↗</span>
+                  </h3>
+                  <span>Cairo standard library</span>
+                </div></a
+              >
+              <p class="project-scope">
+                Math · Storage · Cryptographic primitives
+              </p>
+              <div class="project-meta">
+                <span class="tag">Cairo / Starknet</span
+                ><span>Zenith · Team</span>
+              </div>
+              <a
+                class="project-destination"
+                href="https://github.com/MarioPoneder/audits#team-engagements"
+                aria-label="View StarkWare portfolio entry: Cairo standard library, 3.6 weeks"
+                ><span class="arrow" aria-hidden="true">↗</span
+                ><span class="destination-label">Portfolio</span></a
+              >
+            </article>
+            <article
+              class="project"
+              data-language="cairo"
+              aria-labelledby="project-vesu"
+            >
+              <div class="project-date">
+                <time datetime="2025-08">Aug 2025</time><span>3 weeks</span>
+              </div>
+              <a
+                class="project-site"
+                href="https://vesu.xyz/"
+                aria-label="Vesu website"
+                ><span class="project-logo-frame"
+                  ><img
+                    class="project-logo"
+                    src="/assets/logos/vesu.webp"
+                    width="56"
+                    height="56"
+                    alt=""
+                    loading="lazy"
+                /></span>
+                <div class="project-name">
+                  <h3 id="project-vesu">
+                    Vesu <span class="website-arrow" aria-hidden="true">↗</span>
+                  </h3>
+                  <span>V1 lending protocol upgrade</span>
+                </div></a
+              >
+              <p class="project-scope">Lending · Vaults · Extensions · Hooks</p>
+              <div class="project-meta">
+                <span class="tag">Cairo / Starknet</span
+                ><span>Zenith · Team</span>
+              </div>
+              <a
+                class="project-destination"
+                href="https://github.com/zenith-security/reports/blob/main/reports/Vesu%20V1%20-%20Zenith%20Audit%20Report.pdf"
+                aria-label="Read Vesu report: V1 lending protocol upgrade, 3 weeks"
+                ><span class="arrow" aria-hidden="true">↗</span
+                ><span class="destination-label">Report</span></a
+              >
+            </article>
+            <article
+              class="project"
+              data-language="rust"
+              aria-labelledby="project-meteora"
+            >
+              <div class="project-date">
+                <time datetime="2025-07">Jul 2025</time><span>4.7 weeks</span>
+              </div>
+              <a
+                class="project-site"
+                href="https://meteora.ag/"
+                aria-label="Meteora website"
+                ><span class="project-logo-frame"
+                  ><img
+                    class="project-logo"
+                    src="/assets/logos/meteora.webp"
+                    width="56"
+                    height="56"
+                    alt=""
+                    loading="lazy"
+                /></span>
+                <div class="project-name">
+                  <h3 id="project-meteora">
+                    Meteora
+                    <span class="website-arrow" aria-hidden="true">↗</span>
+                  </h3>
+                  <span>Dynamic liquidity market maker</span>
+                </div></a
+              >
+              <p class="project-scope">Concentrated liquidity · Dynamic fees</p>
+              <div class="project-meta">
+                <span class="tag">Rust / SVM</span><span>Zenith · Team</span>
+              </div>
+              <a
+                class="project-destination"
+                href="https://github.com/zenith-security/reports/blob/main/reports/Meteora%20DLMM%20-%20Zenith%20Audit%20Report.pdf"
+                aria-label="Read Meteora report: Dynamic liquidity market maker, 4.7 weeks"
+                ><span class="arrow" aria-hidden="true">↗</span
+                ><span class="destination-label">Report</span></a
+              >
+            </article>
+            <article
+              class="project"
+              data-language="cairo"
+              aria-labelledby="project-lombard"
+            >
+              <div class="project-date">
+                <time datetime="2025-05">May 2025</time><span>1.4 weeks</span>
+              </div>
+              <a
+                class="project-site"
+                href="https://www.lombard.finance/"
+                aria-label="Lombard website"
+                ><span class="project-logo-frame"
+                  ><img
+                    class="project-logo"
+                    src="/assets/logos/lombard.webp"
+                    width="56"
+                    height="56"
+                    alt=""
+                    loading="lazy"
+                /></span>
+                <div class="project-name">
+                  <h3 id="project-lombard">
+                    Lombard
+                    <span class="website-arrow" aria-hidden="true">↗</span>
+                  </h3>
+                  <span>LBTC on Starknet</span>
+                </div></a
+              >
+              <p class="project-scope">Liquid BTC · Multisig · Cross-chain</p>
+              <div class="project-meta">
+                <span class="tag">Cairo / Starknet</span
+                ><span>Zenith · Team</span>
+              </div>
+              <a
+                class="project-destination"
+                href="https://github.com/MarioPoneder/audits#team-engagements"
+                aria-label="View Lombard portfolio entry: LBTC on Starknet, 1.4 weeks"
+                ><span class="arrow" aria-hidden="true">↗</span
+                ><span class="destination-label">Portfolio</span></a
+              >
+            </article>
+            <article
+              class="project"
+              data-language="rust"
+              aria-labelledby="project-treehouse"
+            >
+              <div class="project-date">
+                <time datetime="2025-03">Mar 2025</time><span>1 week</span>
+              </div>
+              <a
+                class="project-site"
+                href="https://www.treehouse.finance/"
+                aria-label="Treehouse website"
+                ><span class="project-logo-frame logo-on-light"
+                  ><img
+                    class="project-logo"
+                    src="/assets/logos/treehouse.webp"
+                    width="56"
+                    height="56"
+                    alt=""
+                    loading="lazy"
+                /></span>
+                <div class="project-name">
+                  <h3 id="project-treehouse">
+                    Treehouse
+                    <span class="website-arrow" aria-hidden="true">↗</span>
+                  </h3>
+                  <span>Boring Vault on Solana</span>
+                </div></a
+              >
+              <p class="project-scope">
+                Vault accounting · Queues · CPI validation
+              </p>
+              <div class="project-meta">
+                <span class="tag">Rust / SVM</span><span>Zenith · Team</span>
+              </div>
+              <a
+                class="project-destination"
+                href="https://github.com/zenith-security/reports/blob/main/reports/Treehouse%20Finance%20-%20Zenith%20Audit%20Report.pdf"
+                aria-label="Read Treehouse report: Boring Vault on Solana, 1 week"
+                ><span class="arrow" aria-hidden="true">↗</span
+                ><span class="destination-label">Report</span></a
+              >
+            </article>
+            <article
+              class="project"
+              data-language="rust"
+              aria-labelledby="project-gmx"
+            >
+              <div class="project-date">
+                <time datetime="2025-01">Jan 2025</time><span>6 weeks</span>
+              </div>
+              <a
+                class="project-site"
+                href="https://gmx.io/"
+                aria-label="GMX website"
+                ><span class="project-logo-frame"
+                  ><img
+                    class="project-logo"
+                    src="/assets/logos/gmx.webp"
+                    width="56"
+                    height="56"
+                    alt=""
+                    loading="lazy"
+                /></span>
+                <div class="project-name">
+                  <h3 id="project-gmx">
+                    GMX <span class="website-arrow" aria-hidden="true">↗</span>
+                  </h3>
+                  <span>Solana perpetuals protocol</span>
+                </div></a
+              >
+              <p class="project-scope">DEX · Perpetuals</p>
+              <div class="project-meta">
+                <span class="tag">Rust / SVM</span><span>Zenith · Team</span>
+              </div>
+              <a
+                class="project-destination"
+                href="https://github.com/zenith-security/reports/blob/main/reports/GMX%20Solana%20Protocol%20-%20Zenith%20Audit%20Report.pdf"
+                aria-label="Read GMX report: Solana perpetuals protocol, 6 weeks"
+                ><span class="arrow" aria-hidden="true">↗</span
+                ><span class="destination-label">Report</span></a
+              >
+            </article>
+            <article
+              class="project"
+              data-language="solidity"
+              aria-labelledby="project-balancer"
+            >
+              <div class="project-date">
+                <time datetime="2024-09">Sep 2024</time><span>4 weeks</span>
+              </div>
+              <a
+                class="project-site"
+                href="https://balancer.fi/"
+                aria-label="Balancer website"
+                ><span class="project-logo-frame logo-on-light"
+                  ><img
+                    class="project-logo"
+                    src="/assets/logos/balancer.webp"
+                    width="56"
+                    height="56"
+                    alt=""
+                    loading="lazy"
+                /></span>
+                <div class="project-name">
+                  <h3 id="project-balancer">
+                    Balancer
+                    <span class="website-arrow" aria-hidden="true">↗</span>
+                  </h3>
+                  <span>V3 protocol</span>
+                </div></a
+              >
+              <p class="project-scope">AMM · DEX · Vault architecture</p>
+              <div class="project-meta">
+                <span class="tag">Solidity / EVM</span
+                ><span>Spearbit · Team</span>
+              </div>
+              <a
+                class="project-destination"
+                href="https://cantina.xyz/portfolio/d8495962-f61d-4585-bbd4-e7c29332491f"
+                aria-label="Read Balancer report: V3 protocol, 4 weeks"
+                ><span class="arrow" aria-hidden="true">↗</span
+                ><span class="destination-label">Report</span></a
+              >
+            </article>
+            <article
+              class="project"
+              data-language="solidity"
+              aria-labelledby="project-infrared"
+            >
+              <div class="project-date">
+                <time datetime="2024-07">Jul 2024</time><span>3 weeks</span>
+              </div>
+              <a
+                class="project-site"
+                href="https://infrared.finance/"
+                aria-label="Infrared website"
+                ><span class="project-logo-frame"
+                  ><img
+                    class="project-logo"
+                    src="/assets/logos/infrared.webp"
+                    width="56"
+                    height="56"
+                    alt=""
+                    loading="lazy"
+                /></span>
+                <div class="project-name">
+                  <h3 id="project-infrared">
+                    Infrared
+                    <span class="website-arrow" aria-hidden="true">↗</span>
+                  </h3>
+                  <span>Proof of Liquidity infrastructure</span>
+                </div></a
+              >
+              <p class="project-scope">Staking · Voting · Liquidity</p>
+              <div class="project-meta">
+                <span class="tag">Solidity / EVM</span
+                ><span>Spearbit · Team</span>
+              </div>
+              <a
+                class="project-destination"
+                href="https://cantina.xyz/portfolio/89e5aa01-14ad-48f8-af3d-d1182d4ffefb"
+                aria-label="Read Infrared report: Proof of Liquidity infrastructure, 3 weeks"
+                ><span class="arrow" aria-hidden="true">↗</span
+                ><span class="destination-label">Report</span></a
+              >
+            </article>
+            <article
+              class="project"
+              data-language="solidity"
+              aria-labelledby="project-pendle"
+            >
+              <div class="project-date">
+                <time datetime="2024-05">May 2024</time><span>3 weeks</span>
+              </div>
+              <a
+                class="project-site"
+                href="https://pendle.finance/"
+                aria-label="Pendle website"
+                ><span class="project-logo-frame logo-on-light"
+                  ><img
+                    class="project-logo"
+                    src="/assets/logos/pendle.webp"
+                    width="56"
+                    height="56"
+                    alt=""
+                    loading="lazy"
+                /></span>
+                <div class="project-name">
+                  <h3 id="project-pendle">
+                    Pendle
+                    <span class="website-arrow" aria-hidden="true">↗</span>
+                  </h3>
+                  <span>Yield trading protocol</span>
+                </div></a
+              >
+              <p class="project-scope">Tokenization · Yield trading</p>
+              <div class="project-meta">
+                <span class="tag">Solidity / EVM</span
+                ><span>Spearbit · Team</span>
+              </div>
+              <a
+                class="project-destination"
+                href="https://cantina.xyz/portfolio/168747e9-d65a-4e05-a144-53e9fbc1d4f5"
+                aria-label="Read Pendle report: Yield trading protocol, 3 weeks"
+                ><span class="arrow" aria-hidden="true">↗</span
+                ><span class="destination-label">Report</span></a
+              >
+            </article>
+          </div>
+          <div class="work-bottom">
+            <p>
+              Dates and durations refer to the selected engagement. Each project
+              links to its longest engagement in my public portfolio. Where no
+              report is public, the portfolio entry provides context.
+            </p>
+            <a class="text-link" href="https://github.com/MarioPoneder/audits"
+              >Full portfolio on GitHub
+              <span class="arrow" aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="section expertise-section"
+        id="expertise"
+        aria-labelledby="expertise-title"
+      >
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / Areas of expertise</p>
+              <h2 id="expertise-title">
+                Depth in the details.<br />Perspective on the system.
+              </h2>
+            </div>
+            <p>
+              Experience across languages and execution environments, with a
+              focus on how components behave together.
+            </p>
+          </div>
+          <div class="expertise-grid">
+            <article class="expertise-item">
+              <svg
+                class="expertise-icon"
+                viewBox="0 0 48 48"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.3"
+                aria-hidden="true"
+              >
+                <path d="m24 4 17 10v20L24 44 7 34V14Z" />
+                <path d="m7 14 17 10 17-10M24 24v20m-9-25 17-10" />
+              </svg>
+              <h3>Smart contract security</h3>
+              <p>
+                Solidity and Yul on the EVM. Rust on Solana, NEAR, and
+                Substrate. Cairo on Starknet. From contract logic and access
+                control to the assumptions built into each execution
+                environment.
+              </p>
+              <p class="mono">EVM / SVM / Starknet / NEAR / Substrate</p>
+            </article>
+            <article class="expertise-item">
+              <svg
+                class="expertise-icon"
+                viewBox="0 0 48 48"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.3"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 39V24h9v15m4 0V15h9v24m4 0V5h9v34M4 43h40M6 17 20 5l7 3"
+                />
+              </svg>
+              <h3>DeFi & protocol logic</h3>
+              <p>
+                Liquidity pools, perpetuals, lending markets, vaults, staking,
+                and stablecoins. Examining accounting, incentives, and edge
+                cases where individual components meet.
+              </p>
+              <p class="mono">AMMs / Lending / Vaults / Stablecoins</p>
+            </article>
+            <article class="expertise-item">
+              <svg
+                class="expertise-icon"
+                viewBox="0 0 48 48"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.3"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 11h12v12H5zM31 25h12v12H31zM17 17h20v8M31 31H11v-8M34 14l3 3-3 3M14 28l-3 3 3 3"
+                />
+              </svg>
+              <h3>Cross-chain & infrastructure</h3>
+              <p>
+                Bridges, messaging, light clients, rollups, and cryptographic
+                integrations. Following trust assumptions across chains and
+                checking the boundaries that hold a system together.
+              </p>
+              <p class="mono">Bridges / Messaging / Proofs / Rollups</p>
+            </article>
+          </div>
+          <div class="research-note">
+            <p>
+              <strong>Research beyond engagements.</strong> My public work also
+              includes competitive audit findings and judging on Code4rena and
+              Cantina.
+            </p>
+            <a
+              class="text-link"
+              href="https://github.com/MarioPoneder/audits#code4rena"
+              >Explore public findings
+              <span class="arrow" aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="section about-section"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="wrap about">
+          <div class="portrait-panel">
+            <img
+              src="/img/profile.png"
+              width="683"
+              height="683"
+              alt="Mario Poneder, founder of Decentra Vision"
+              loading="lazy"
+            />
+            <div class="portrait-caption">
+              <div>
+                <strong>Mario Poneder</strong
+                ><span>Also known as 0xTheC0der</span>
+              </div>
+              <span class="portrait-plus" aria-hidden="true">+</span>
+            </div>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow">03 / The person behind the work</p>
+            <h2 id="about-title">
+              An engineer's curiosity.<br />A researcher's mindset.
+            </h2>
+            <p>
+              I'm Mario Poneder, an independent security researcher based in
+              Austria. Through Decentra Vision, I work with builders and fellow
+              researchers to make decentralized systems safer.
+            </p>
+            <p>
+              What draws me to security research is understanding how a system
+              really works. I enjoy getting deep into a codebase, questioning
+              its assumptions, and following interactions until the edge cases
+              become clear.
+            </p>
+            <p>
+              I value the exchange with other researchers as much as the
+              technical work: comparing approaches, challenging conclusions, and
+              learning from each new codebase. That curiosity is what keeps the
+              work interesting.
+            </p>
+
+            <div class="profile-links">
+              <a
+                class="text-link"
+                href="https://www.linkedin.com/in/mario-poneder"
+                >More about my background
+                <span class="arrow" aria-hidden="true">↗</span></a
+              ><a class="text-link" href="https://x.com/MarioPoneder"
+                >Follow my work on X
+                <span class="arrow" aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+
+          <div class="about-history">
+            <p class="mono">The path here</p>
+            <ol class="journey">
+              <li>
+                <h3>Electronics, automation &amp; GPUs</h3>
+                <p>
+                  After a school focused on electronics and computer
+                  engineering, I began developing industrial automation software
+                  and working with GPU-accelerated parallel computing using
+                  OpenCL.
+                </p>
+              </li>
+              <li>
+                <h3>Engineering physics &amp; dark matter</h3>
+                <p>
+                  While earning my master's degree in engineering physics, I ran
+                  particle physics simulations for dark matter research with the
+                  CRESST experiment.
+                </p>
+              </li>
+              <li>
+                <h3>Embedded software leadership</h3>
+                <p>
+                  After university, I became lead embedded software engineer at
+                  a company building electrical drives for intralogistics.
+                  Alongside that work, I kept exploring blockchain technology.
+                </p>
+              </li>
+              <li>
+                <h3>Independent security research · since 2022</h3>
+                <p>
+                  I founded Decentra Vision at the beginning of 2022 and moved
+                  into independent reviews, team engagements, and competitive
+                  audits. I've judged on Code4rena since 2023 and have also
+                  judged on Cantina.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section
+        class="contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="wrap">
+          <div class="contact-top">
+            <div>
+              <p class="eyebrow">04 / Get in touch</p>
+              <h2 id="contact-title">
+                Building something<br /><span>worth securing?</span>
+              </h2>
+            </div>
+            <div class="contact-copy">
+              <p>
+                Tell me what you're working on. For security engagements,
+                collaborations, or a conversation about your protocol, reach out
+                directly.
+              </p>
+              <div class="email-actions">
+                <a class="email-link" href="mailto:m.poneder@decentra.vision"
+                  ><span class="email-address"
+                    >m.poneder@<wbr />decentra.vision</span
+                  >
+                  <span class="arrow" aria-hidden="true">↗</span></a
+                >
+                <button
+                  class="copy-email"
+                  type="button"
+                  data-copy-email="m.poneder@decentra.vision"
+                  hidden
+                >
+                  Copy email address
+                </button>
+                <p
+                  class="copy-status"
+                  role="status"
+                  aria-live="polite"
+                  aria-atomic="true"
+                ></p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-bottom">
+            <p class="mono">Based in Austria · Working across ecosystems</p>
+            <div class="socials" aria-label="Social profiles and email">
+              <a
+                class="social-link"
+                href="https://github.com/MarioPoneder"
+                aria-label="GitHub"
+                title="GitHub"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.76-.24.76-.54v-2.1c-3.12.68-3.78-1.33-3.78-1.33-.51-1.29-1.25-1.63-1.25-1.63-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 .1 1.52 1.75 3.27.97.1-.72.4-1.22.71-1.5-2.49-.28-5.11-1.25-5.11-5.54 0-1.23.44-2.23 1.15-3.02-.11-.28-.5-1.43.11-2.98 0 0 .94-.3 3.08 1.15a10.8 10.8 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.55.22 2.7.1 2.98.72.79 1.15 1.79 1.15 3.02 0 4.3-2.62 5.25-5.13 5.53.41.35.77 1.03.77 2.08v3.05c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z"
+                  /></svg
+              ></a>
+              <a
+                class="social-link"
+                href="https://x.com/MarioPoneder"
+                aria-label="X"
+                title="X"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M18.9 2H22l-6.8 7.78L23.2 22h-6.27L12 14.54 5.47 22H2.3l7.94-9.08L2.56 2h6.43l4.46 6.76L18.9 2Zm-1.1 18h1.74L8.03 3.89H6.17L17.8 20Z"
+                  /></svg
+              ></a>
+              <a
+                class="social-link"
+                href="https://www.linkedin.com/in/mario-poneder"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M4.98 3.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM.5 8H4.5V23H.5V8ZM8 8h3.8v2.05h.06A4.17 4.17 0 0 1 15.61 8c4.02 0 4.77 2.64 4.77 6.07V23h-4v-7.92c0-1.89-.04-4.32-2.64-4.32-2.64 0-3.04 2.06-3.04 4.18V23H8V8Z"
+                    transform="translate(2 0)"
+                  /></svg
+              ></a>
+              <a
+                class="social-link"
+                href="https://t.me/TheC0der0x"
+                aria-label="Telegram"
+                title="Telegram"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="m22.3 3.2-3.5 17c-.26 1.2-.97 1.49-1.97.92l-5.34-3.94-2.58 2.5c-.28.29-.53.54-1.08.54l.38-5.44L18.1 5.83c.43-.38-.1-.59-.68-.21L5.16 13.34-.12 11.69c-1.15-.36-1.17-1.15.24-1.7L20.8 2.05c.96-.35 1.8.23 1.5 1.15Z"
+                  /></svg
+              ></a>
+              <a
+                class="social-link"
+                href="https://code4rena.com/@0xTheC0der"
+                aria-label="Code4rena"
+                title="Code4rena"
+                ><svg
+                  viewBox="0 0 224 220"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M223.893 131.053L211.207 71.2026C211.095 70.6709 210.936 70.1501 210.731 69.6463C208.929 63.4213 206.518 62.0733 203.266 59.454C200.258 57.1963 198.964 56.3415 198.964 56.3415C198.964 56.3415 190.735 75.17 188.49 76.9564C166.481 94.4916 129.607 121.814 120.593 126.745L120.428 126.833C117.465 128.624 114.112 129.683 110.651 129.924V220C118.347 219.801 125.864 217.65 132.483 213.753C142.437 208.273 168.914 187.209 199.948 162.243L212.114 152.467C220.199 146.012 224.081 139.601 223.992 132.839C224.017 132.242 223.983 131.644 223.893 131.053Z"
+                    fill="currentColor"
+                    opacity="0.75"
+                  />
+                  <path
+                    d="M102.706 127.946L32.6005 76.3952C32.0157 75.9108 31.495 75.3542 31.0508 74.7386C30.9888 73.0468 30.477 71.402 29.5679 69.9731C28.6588 68.5442 27.3853 67.3828 25.878 66.6081L26.3255 56.3415C26.3255 56.3415 24.8631 57.3006 21.5237 59.3168C17.3222 61.8345 14.1683 63.6763 12.0076 73.5833L10.3815 81.692L0.188723 132.633C0.0468538 133.35 -0.0153628 134.081 0.00320136 134.812C0.243288 144.022 8.15525 150.474 9.96681 151.825L89.9158 213.251C95.8923 217.724 103.183 220.096 110.651 219.997V130.355C107.799 130.529 104.979 129.674 102.706 127.946Z"
+                    fill="currentColor"
+                    opacity="0.5"
+                  />
+                  <path
+                    d="M206.297 60.1607C206.158 60.0616 206.025 59.9548 205.897 59.8408C203.387 57.7334 153.828 23.928 124.511 3.9691C120.631 1.30902 116.009 -0.0777618 111.295 0.003367C106.581 0.0844958 102.011 1.62947 98.2261 4.42146L94.6377 7.11354C88.4165 11.7585 76.8629 20.3533 62.9318 30.2058C46.9566 41.5148 32.259 51.3563 19.1833 59.1567C13.6287 62.4667 8.49617 71.4145 22.5161 82.3262C23.9937 83.4296 97.7484 137.768 97.7484 137.768C106.214 143.957 116.234 143.406 126.177 137.679C135.853 132.372 170.114 106.897 191.722 89.895L197.21 85.5589C197.721 85.1507 198.188 84.7535 198.632 84.3563C207.864 76.7766 215.607 66.5489 206.297 60.1607Z"
+                    fill="currentColor"
+                    opacity="1"
+                  /></svg
+              ></a>
+              <a
+                class="social-link"
+                href="https://cantina.xyz/u/0xTheC0der"
+                aria-label="Cantina"
+                title="Cantina"
+                ><svg
+                  viewBox="0 0 364.771 150"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M318.262 88.9383H309.107C307.645 88.9383 306.323 89.7698 305.657 91.0723C304.144 94.0341 302.208 96.9388 299.869 99.758C293.934 106.938 285.394 113.6 274.504 119.434C263.444 125.362 250.668 130.047 236.757 133.363C235.193 133.736 234.16 131.791 235.355 130.716C244.621 122.372 251.799 111.755 256.003 99.758C257.231 96.2647 258.205 92.6477 258.901 88.9382C259.221 87.2643 259.482 85.5709 259.685 83.8579C259.918 81.8975 261.551 80.4061 263.526 80.4061H283.887C286.922 80.4061 289.381 77.9017 289.294 74.8384C289.21 71.8742 286.625 69.5864 283.66 69.5864H263.519C261.549 69.5864 259.918 68.0977 259.685 66.1407C259.482 64.4295 259.221 62.736 258.901 61.0621C258.205 57.3523 257.232 53.7353 256.003 50.2424C251.799 38.2392 244.616 27.6211 235.344 19.2775C234.149 18.2021 235.182 16.2569 236.745 16.6297C250.663 19.9476 263.444 24.639 274.505 30.566C285.394 36.3928 293.934 43.0627 299.869 50.2424C302.208 53.0677 304.144 55.9686 305.657 58.9288C306.323 60.2308 307.645 61.0621 309.107 61.0621H318.262H355.104H360.9C363.973 61.0621 365.812 57.6544 364.138 55.0772C363.078 53.4454 361.885 51.8336 360.56 50.2424C351.286 39.0747 335.613 28.9969 314.298 20.7508C281.012 7.86763 237.269 0.556606 190.613 0.0309444C189.77 0.0230228 188.92 0.0230228 188.07 0.0154722C187.12 0.00792159 186.161 0 185.203 0C184.113 0 183.031 0.00792159 181.949 0.0230228C181.231 0.0309444 180.512 0.0230228 179.793 0.0388737C133.137 0.556613 89.4019 7.86763 56.1159 20.7508C34.8009 28.9969 19.1277 39.0747 9.85368 50.2424C6.93233 53.7511 4.6525 57.3602 3.02173 61.0621C1.0202 65.5909 0 70.2509 0 75.0042C0 79.7491 1.0202 84.4095 3.02173 88.9383C4.6525 92.6402 6.93233 96.2493 9.85368 99.758C19.1277 110.925 34.8009 121.003 56.1159 129.25C89.4018 142.133 133.137 149.444 179.793 149.962C181.594 149.992 183.395 150 185.203 150C187.011 150 188.812 149.992 190.613 149.969C237.269 149.444 281.012 142.133 314.298 129.25C335.613 121.003 351.286 110.925 360.56 99.758C361.885 98.1668 363.078 96.555 364.138 94.9232C365.812 92.346 363.973 88.9383 360.9 88.9383H318.262ZM63.7437 88.9383C61.742 84.4016 60.7142 79.7336 60.7142 75.0041C60.7142 70.2743 61.742 65.5984 63.7437 61.0621C65.3667 57.3602 67.6465 53.7432 70.5447 50.2424C76.48 43.0627 85.0199 36.3928 95.9093 30.566C106.97 24.6388 119.752 19.9473 133.67 16.6294C135.233 16.2567 136.266 18.2014 135.071 19.2765C125.798 27.6202 118.615 38.2387 114.411 50.2424C113.182 53.7353 112.209 57.3523 111.513 61.0621C111.193 62.736 110.931 64.4295 110.728 66.1407C110.496 68.0977 108.865 69.5864 106.895 69.5864H86.7539C83.7884 69.5864 81.2036 71.8742 81.1193 74.8385C81.0322 77.9017 83.4916 80.4061 86.5269 80.4061H106.888C108.862 80.4061 110.496 81.8975 110.728 83.8579C110.931 85.5709 111.193 87.2643 111.513 88.9382C112.209 92.6477 113.182 96.2647 114.411 99.758C118.615 111.755 125.793 122.373 135.06 130.717C136.254 131.792 135.222 133.736 133.659 133.364C119.745 130.047 106.963 125.362 95.9093 119.434C85.0199 113.6 76.48 106.938 70.5447 99.758C67.6465 96.2647 65.3667 92.6402 63.7437 88.9383ZM122.557 88.9383C122.496 88.6705 122.438 88.4022 122.381 88.1333C121.542 84.1518 124.589 80.4061 128.658 80.4061H128.694C138.537 80.4061 148.223 83.2332 156.34 88.8015C156.406 88.847 156.472 88.8925 156.538 88.9383C159.947 91.2877 163.108 94.0236 165.975 97.1149C166.771 97.9727 167.536 98.8538 168.27 99.758C170.079 101.968 171.709 104.297 173.151 106.725C177.601 114.216 179.793 122.835 179.793 131.548C179.793 135.627 176.035 138.654 172.043 137.819C151.208 133.463 134.058 118.97 125.996 99.758C124.543 96.2957 123.384 92.6787 122.557 88.9383ZM122.557 61.0621C123.384 57.3213 124.543 53.7047 125.996 50.2424C134.058 31.0302 151.208 16.5371 172.043 12.1811C176.035 11.3465 179.793 14.3737 179.793 18.452V18.4614C179.793 27.1727 177.602 35.7886 173.154 43.279C171.713 45.7063 170.085 48.0343 168.278 50.2424C167.544 51.1465 166.771 52.0273 165.975 52.893C163.115 55.9843 159.954 58.7127 156.554 61.0621C156.496 61.1024 156.438 61.1425 156.379 61.1826C148.263 66.7603 138.57 69.5864 128.722 69.5864H128.659C124.589 69.5864 121.541 65.8382 122.383 61.856C122.439 61.5908 122.497 61.3261 122.557 61.0621ZM247.857 88.9383C247.03 92.6787 245.871 96.2957 244.425 99.758C236.356 118.97 219.199 133.463 198.362 137.819C194.37 138.654 190.613 135.627 190.613 131.548V131.53C190.613 122.798 192.808 114.159 197.282 106.661C198.717 104.255 200.337 101.948 202.136 99.758C202.862 98.8538 203.635 97.9727 204.431 97.1149C207.298 94.0236 210.459 91.2877 213.867 88.9383C213.934 88.8921 214.001 88.8461 214.068 88.8002C222.184 83.2328 231.869 80.4061 241.712 80.4061H241.756C245.825 80.4061 248.871 84.1518 248.032 88.1333C247.976 88.4022 247.917 88.6705 247.857 88.9383ZM244.425 50.2424C245.871 53.7047 247.03 57.3213 247.857 61.0621C247.916 61.3261 247.974 61.5908 248.03 61.856C248.872 65.8382 245.825 69.5864 241.755 69.5864H241.684C231.836 69.5864 222.143 66.7604 214.027 61.1826C213.968 61.1426 213.91 61.1024 213.852 61.0621C210.452 58.7127 207.291 55.9843 204.431 52.893C203.635 52.0273 202.862 51.1465 202.128 50.2424C200.33 48.0502 198.71 45.7401 197.275 43.3323C192.807 35.836 190.613 27.2021 190.613 18.4752V18.4519C190.613 14.3736 194.37 11.3465 198.362 12.181C219.199 16.5369 236.356 31.03 244.425 50.2424ZM310.387 30.8362C323.212 35.8001 333.796 41.4331 341.82 47.463C343.005 48.3535 342.364 50.2424 340.882 50.2424H315.275C313.991 50.2424 312.789 49.6085 312.077 48.5406C306.912 40.7924 299.438 33.578 289.849 27.1498C288.384 26.1676 289.456 23.8914 291.15 24.3825C297.895 26.338 304.322 28.4921 310.387 30.8362ZM60.0265 119.164C45.2497 113.445 33.4485 106.837 25.1095 99.758C20.9672 96.2493 17.6826 92.6247 15.31 88.9383C12.3499 84.3476 10.8197 79.6718 10.8197 75.0041C10.8197 70.3283 12.3577 65.6527 15.31 61.0621C17.6826 57.3757 20.9672 53.7511 25.1095 50.2424C33.4485 43.1631 45.2497 36.5555 60.0265 30.8362C66.0885 28.4911 72.5204 26.3363 79.2703 24.3802C80.9635 23.8895 82.0341 26.1645 80.5698 27.1461C70.28 34.0436 62.4252 41.8462 57.2442 50.2424C55.0724 53.7511 53.3722 57.3677 52.1511 61.0621C50.6596 65.5984 49.8945 70.2588 49.8945 75.0041C49.8945 79.7416 50.6596 84.4016 52.1511 88.9383C53.3722 92.6323 55.0724 96.2493 57.2442 99.758C62.4252 108.154 70.28 115.957 80.5698 122.854C82.0341 123.836 80.9635 126.111 79.2703 125.62C72.5204 123.664 66.0885 121.509 60.0265 119.164ZM310.387 119.164C304.322 121.508 297.895 123.662 291.15 125.618C289.455 126.109 288.384 123.833 289.849 122.85C299.438 116.422 306.912 109.208 312.077 101.46C312.789 100.392 313.991 99.758 315.275 99.758H340.882C342.364 99.758 343.005 101.647 341.82 102.537C333.796 108.567 323.212 114.2 310.387 119.164Z"
+                    fill="currentColor"
+                  /></svg
+              ></a>
+              <a
+                class="social-link"
+                href="mailto:m.poneder@decentra.vision"
+                aria-label="Email Mario"
+                title="Email Mario"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M2 4h20v16H2V4Zm2 2v.7l8 5.7 8-5.7V6H4Zm16 12V9.15l-8 5.7-8-5.7V18h16Z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <a class="footer-brand" href="/" aria-label="Decentra Vision home"
+            ><img
+              src="/img/logo_dark.png"
+              width="178"
+              height="36"
+              alt="Decentra Vision"
+              loading="lazy"
+          /></a>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="/legal-info/">Legal info</a
+            ><a href="/privacy-policy/">Privacy policy</a
+            ><a
+              href="mailto:m.poneder@decentra.vision"
+              aria-label="Email Mario Poneder"
+              >Email Mario ↗</a
+            >
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Decentra Vision e.U. · All rights reserved.</span
+          ><span>Securing the decentralized future, block by block</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

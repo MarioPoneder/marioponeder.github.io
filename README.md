@@ -1,174 +1,58 @@
-# just-the-docs-template
+﻿# Decentra Vision
 
-This is a *bare-minimum* template to create a [Jekyll] site that:
+Static portfolio for Mario Poneder / 0xTheC0der, an independent on-chain security researcher. The redesign puts selected engagements and recent experience first, followed by technical expertise, background, and direct contact.
 
-- uses the [Just the Docs] theme;
-- can be built and published on [GitHub Pages];
-- can be built and previewed locally, and published on other platforms.
+## Local preview
 
-More specifically, the created site:
+Requires Node.js 20 or later. No package installation is needed.
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem;
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages.
+```sh
+npm run dev
+```
 
-To get started with creating a site, simply:
+Open **http://127.0.0.1:4173**. The preview binds only to the local computer. It serves public site files, not repository metadata or development scripts. Refresh after editing. Stop with Ctrl+C.
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+## Check and build
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](#hosting-your-docs-from-an-existing-project-repo).
+```sh
+npm run check
+npm run build
+```
 
-After completing the creation of your new site on GitHub, update it as needed:
+The check validates all four HTML pages, internal links and anchors, local assets, image metadata, and the absence of external embeds. The build copies public files into `_site/`, first clearing that generated directory so removed pages cannot remain in a later build. Neither command publishes anything.
 
-## Replace the content of the template pages
+The site is plain HTML, CSS, and JavaScript, with no runtime dependencies, remote fonts, analytics, cookies, storage, contact backend, or external embeds. Portfolio filters and the mobile menu are progressive enhancements: all content and navigation remain available without JavaScript.
 
-Update the following files to your own content:
+## Editing
 
-- `index.md` (your new home page)
-- `README.md` (information for those who access your site repo on GitHub)
+- `index.html`: homepage, portfolio entries, expertise, biography, social links.
+- `legal-info/index.html`: business information, preserving `/legal-info` through a directory redirect.
+- `privacy-policy/index.html`: privacy policy, preserving `/privacy-policy` in the same way.
+- `404.html`: custom error page.
+- `assets/site.css`: responsive layout, typography, color, reduced-motion and focus styles.
+- `assets/site.js`: language filters, mobile navigation, current-section indicator, and collaborator disclosure.
+- `assets/network.svg`: original decorative block-network illustration.
+- `assets/fonts/`: self-hosted Manrope and its SIL Open Font License.
+- `img/`: existing brand, portrait, and social assets.
 
-## Changing the version of the theme and/or Jekyll
+Header and footer markup is intentionally static and repeated across four pages. Update all four when changing shared navigation. Edit portfolio rows directly; use `data-language="rust"`, `"solidity"`, or `"cairo"` for the current filters. Add a corresponding filter button when introducing another language, and keep the initial engagement count consistent. The portfolio does not fetch from GitHub or DefiLlama at runtime. Sources, DefiLlama research and review notes are in [CONTENT-NOTES.md](CONTENT-NOTES.md).
 
-Simply edit the relevant line(s) in the `Gemfile`.
+## GitHub Pages compatibility
 
-## Adding a plugin
+The existing `.github/workflows/` files are unchanged. The current Jekyll workflow can publish these ordinary static files without a theme; `_config.yml` excludes development files. The Gemfile and lockfile are retained for workflow compatibility. Local preview and the static build do not require Ruby. `_site/` can also be served by any static host.
 
-The Just the Docs theme automatically includes the [`jekyll-seo-tag`] plugin.
+The existing DNS, custom-domain and repository Pages settings are reused. Both root-hosted domains are supported; GitHub Pages currently serves the custom domain at `https://www.decentra.vision/`. Canonical URLs retain the existing `https://decentra.vision` setting. No CNAME file has been added or changed.
 
-To add an extra plugin, you need to add it in the `Gemfile` *and* in `_config.yml`. For example, to add [`jekyll-default-layout`]:
+**Publishing:** the existing workflow deploys a push to `main`. Keep further drafts local until publication is explicitly intended.
 
-- Add the following to your site's `Gemfile`:
+## Validation of this draft
 
-  ```ruby
-  gem "jekyll-default-layout"
-  ```
+Tested in headless Microsoft Edge at widths from 320 to 1920 pixels, including filters, menu opening/closing, Escape and focus return, internal navigation, legacy legal URLs, custom 404 responses, reduced motion, and JavaScript disabled. Automated axe checks found no WCAG 2 A/AA or WCAG 2.1 AA violations on the four pages and mobile homepage. These checks supplement visual review; they are not a complete accessibility certification.
 
-- And add the following to your site's `_config.yml`:
+The browser made no third-party asset requests and reported no JavaScript errors. Temporary test dependencies, screenshots, and results are in the ignored `.preview/` folder. The Ruby/Jekyll publishing workflow has not been run locally; Ruby is not installed in this environment.
 
-  ```yaml
-  plugins:
-    - jekyll-default-layout
-  ```
+The fourteen selections link to eleven public report destinations and three portfolio entries; all returned HTTP 200 in read-only checks. Project names/logos link separately to their official websites. Selection dates are newest first, and each project uses its longest recorded engagement. The dark palette passes the same automated accessibility checks. Footer email actions and copy-email success/failure paths were also checked without launching a mail app, sending messages, or changing the user's clipboard.
 
-Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
+A follow-up review reproduced and fixed a stale current-section indicator when scrolling back above the portfolio. Regression checks cover desktop, phone and landscape layouts, returning to the top, direct section links, browser history, portfolio filtering and reaching the page bottom. Keyboard checks also cover short screens, and a scan of every width from 320 to 1100 pixels found no horizontal page overflow. The four-page accessibility scan, contact checks, local link checks and static build passed after the fix.
 
-## Publishing your site on GitHub Pages
-
-1.  If your created site is `YOUR-USERNAME/YOUR-SITE-NAME`, update `_config.yml` to:
-
-    ```yaml
-    title: YOUR TITLE
-    description: YOUR DESCRIPTION
-    theme: just-the-docs
-
-    url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
-
-    aux_links: # remove if you don't want this link to appear on your pages
-      Template Repository: https://github.com/YOUR-USERNAME/YOUR-SITE-NAME
-    ```
-
-2.  Push your updated `_config.yml` to your site on GitHub.
-
-3.  In your newly created repo on GitHub:
-    - go to the `Settings` tab -> `Pages` -> `Build and deployment`, then select `Source`: `GitHub Actions`.
-    - if there were any failed Actions, go to the `Actions` tab and click on `Re-run jobs`.
-
-## Building and previewing your site locally
-
-Assuming [Jekyll] and [Bundler] are installed on your computer:
-
-1.  Change your working directory to the root directory of your site.
-
-2.  Run `bundle install`.
-
-3.  Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
-
-    The built site is stored in the directory `_site`.
-
-## Publishing your built site on a different platform
-
-Just upload all the files in the directory `_site`.
-
-## Customization
-
-You're free to customize sites that you create with this template, however you like!
-
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
-
-## Hosting your docs from an existing project repo
-
-You might want to maintain your docs in an existing project repo. Instead of creating a new repo using the [just-the-docs template](https://github.com/just-the-docs/just-the-docs-template), you can copy the template files into your existing repo and configure the template's Github Actions workflow to build from a `docs` directory. You can clone the template to your local machine or download the `.zip` file to access the files.
-
-### Copy the template files
-
-1.  Create a `.github/workflows` directory at your project root if your repo doesn't already have one. Copy the `pages.yml` file into this directory. GitHub Actions searches this directory for workflow files.
-
-2.  Create a `docs` directory at your project root and copy all remaining template files into this directory.
-
-### Modify the GitHub Actions workflow
-
-The GitHub Actions workflow that builds and deploys your site to Github Pages is defined by the `pages.yml` file. You'll need to edit this file to that so that your build and deploy steps look to your `docs` directory, rather than the project root.
-
-1.  Set the default `working-directory` param for the build job.
-
-    ```yaml
-    build:
-      runs-on: ubuntu-latest
-      defaults:
-        run:
-          working-directory: docs
-    ```
-
-2.  Set the `working-directory` param for the Setup Ruby step.
-
-    ```yaml
-    - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
-          bundler-cache: true
-          cache-version: 0
-          working-directory: '${{ github.workspace }}/docs'
-    ```
-
-3.  Set the path param for the Upload artifact step:
-
-    ```yaml
-    - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: "docs/_site/"
-    ```
-
-4.  Modify the trigger so that only changes within the `docs` directory start the workflow. Otherwise, every change to your project (even those that don't affect the docs) would trigger a new site build and deploy.
-
-    ```yaml
-    on:
-      push:
-        branches:
-          - "main"
-        paths:
-          - "docs/**"
-    ```
-
-## Licensing and Attribution
-
-This repository is licensed under the [MIT License]. You are generally free to reuse or extend upon this code as you see fit; just include the original copy of the license (which is preserved when you "make a template"). While it's not necessary, we'd love to hear from you if you do use this template, and how we can improve it for future use!
-
-The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party [starter workflows]. A copy of their MIT License is available in [actions/starter-workflows].
-
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Jekyll]: https://jekyllrb.com
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[Bundler]: https://bundler.io
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
-[`jekyll-default-layout`]: https://github.com/benbalter/jekyll-default-layout
-[`jekyll-seo-tag`]: https://jekyll.github.io/jekyll-seo-tag
-[MIT License]: https://en.wikipedia.org/wiki/MIT_License
-[starter workflows]: https://github.com/actions/starter-workflows/blob/main/pages/jekyll.yml
-[actions/starter-workflows]: https://github.com/actions/starter-workflows/blob/main/LICENSE
+The company strip uses locally hosted logos and an accessible “& others” disclosure with eight additional teams and platforms. All seven social buttons use SVG. The project selection includes three Cairo engagements (StarkWare, Vesu and Lombard), while Substrate and NEAR are mentioned in the work introduction. The biography focuses on motivation and approach; the separate timeline retains the engineering background and judging experience on Code4rena and Cantina. See CONTENT-NOTES.md for logo provenance, DefiLlama snapshots, link-check caveats, and exact brand naming.

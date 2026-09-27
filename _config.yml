@@ -1,26 +1,17 @@
-title: Decentra Vision - On-chain Security
-description: Offering my services as an independent smart contract security researcher
-theme: just-the-docs
-
+﻿# The existing Pages workflow can copy this static site with Jekyll.
+# Local preview and builds need only Node.js; no Ruby or theme is required.
+title: Decentra Vision - On-chain security
+description: Independent smart contract security research by Mario Poneder. Rust, Solidity and Cairo.
 url: https://decentra.vision
-
-nav_external_links:
-  - title: Get a quote
-    url: https://tally.so/r/3lOGb6
-    hide_icon: false
-    opens_in_new_tab: true
-  - title: Public reports
-    url: https://github.com/MarioPoneder/audits
-    hide_icon: false
-    opens_in_new_tab: true
-  
-logo: "img/logo_dark.png"
-
-heading_anchors: false
-
-color_scheme: custom_dark
-
-mermaid:
-  # Version of mermaid library
-  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
-  version: "10.6.0"
+exclude:
+  - README.md
+  - CONTENT-NOTES.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - scripts
+  - node_modules
+  - vendor
+  - .preview
