@@ -304,7 +304,8 @@ a:hover .arrow {
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 12px;
   margin: 24px;
   font-family: var(--mono);
   font-size: 0.875rem;
@@ -317,9 +318,10 @@ a:hover .arrow {
   background: #dcecbd;
   width: 6px;
   height: 6px;
-  margin-right: 8px;
+  flex: none;
+  margin-top: 8px;
 }
-.art-top span:first-child {
+.art-top > span:first-child {
   margin-right: auto;
 }
 .art-image {
@@ -1225,18 +1227,49 @@ a:hover .arrow {
   }
   .hero-art {
     min-height: 0;
-    aspect-ratio: 1.12;
+    width: 100%;
+    max-width: 440px;
+    justify-self: center;
   }
   .art-image {
-    width: 104%;
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transform: none;
+    flex: none;
   }
   .art-top,
   .art-bottom {
-    margin: 20px;
+    margin: 16px;
     font-size: 0.875rem;
+    letter-spacing: 0.025em;
+  }
+  .art-top {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 0;
+  }
+  .art-top:before {
+    margin-top: 0;
+  }
+  .art-top > span:first-child {
+    flex: 1 1 130px;
+    min-width: 0;
+  }
+  .art-top > span:last-child {
+    margin-left: auto;
+    white-space: nowrap;
+  }
+  .art-research,
+  .art-bottom > span:first-child {
+    display: none;
   }
   .art-bottom {
-    margin-bottom: 17px;
+    justify-content: flex-end;
+    margin-top: 0;
+    padding-top: 12px;
   }
   .expertise-strip {
     padding-block: 23px;
@@ -1618,16 +1651,6 @@ a:hover .arrow {
 }
 
 /* Readable text needs room to wrap instead of smaller breakpoint fonts. */
-.art-top,
-.art-bottom {
-  gap: 12px;
-  align-items: flex-start;
-}
-.art-top:before {
-  flex: none;
-  margin-top: 8px;
-  margin-right: 0;
-}
 .about-copy > .eyebrow {
   font-size: 0.875rem;
 }
