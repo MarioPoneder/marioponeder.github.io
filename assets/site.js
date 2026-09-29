@@ -27,7 +27,7 @@ if (menuButton && navigation) {
       menuButton.focus();
     }
   });
-  matchMedia("(min-width: 681px)").addEventListener("change", closeMenu);
+  matchMedia("(min-width: 961px)").addEventListener("change", closeMenu);
 }
 // Native details keeps the collaborator list usable without JavaScript.
 const otherCollaborators = document.querySelector(".other-collaborators");

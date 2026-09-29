@@ -161,11 +161,11 @@ a:hover .arrow {
   font-size: 0.9375rem;
   font-weight: 600;
 }
-.navigation a:not(.nav-contact) {
+.navigation a:not(.nav-contact, .nav-portfolio) {
   position: relative;
   padding-block: 10px;
 }
-.navigation a:not(.nav-contact):after {
+.navigation a:not(.nav-contact, .nav-portfolio):after {
   content: "";
   position: absolute;
   bottom: 5px;
@@ -189,6 +189,13 @@ a:hover .arrow {
 .nav-contact:hover {
   background: #1c2940;
   border-color: var(--blue);
+}
+.navigation .nav-portfolio {
+  flex: none;
+  min-height: 44px;
+  padding: 10px 17px;
+  gap: 12px;
+  font-size: inherit;
 }
 .menu-toggle {
   display: none;
@@ -1167,12 +1174,9 @@ a:hover .arrow {
     max-width: 170px;
   }
 }
-@media (max-width: 680px) {
+@media (max-width: 960px) {
   html {
     scroll-padding-top: 90px;
-  }
-  .wrap {
-    width: calc(100% - 40px);
   }
   .header-inner {
     min-height: 77px;
@@ -1180,7 +1184,7 @@ a:hover .arrow {
     gap: 0;
   }
   .brand img {
-    width: 202px;
+    width: clamp(170px, 52vw, 202px);
   }
   .menu-toggle:not([hidden]) {
     display: block;
@@ -1196,9 +1200,18 @@ a:hover .arrow {
   .js .navigation:not(.is-open) {
     display: none;
   }
-  .navigation .nav-contact {
-    padding: 7px 12px;
+  .navigation .nav-contact,
+  .navigation .nav-portfolio {
+    flex: 1 0 auto;
+    max-width: 100%;
+    justify-content: center;
+    padding: 10px 14px;
     gap: 12px;
+  }
+}
+@media (max-width: 680px) {
+  .wrap {
+    width: calc(100% - 40px);
   }
   .hero {
     grid-template-columns: 1fr;
