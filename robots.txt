@@ -1,0 +1,5 @@
+# Public pages and assets are available to search and AI discovery crawlers.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.decentra.vision/sitemap.xml

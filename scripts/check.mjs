@@ -2,6 +2,7 @@ import { readFile, stat } from "node:fs/promises";
 import { join } from "node:path";
 import assert from "node:assert/strict";
 import { root } from "./build.mjs";
+import { checkSeo } from "./check-seo.mjs";
 
 // Validate the static site's link graph without relying on a server or network.
 const pages = [
@@ -76,6 +77,7 @@ for (const [path, html] of contents) {
   }
 }
 const css = await readFile(join(root, "assets/site.css"), "utf8");
+await checkSeo(contents);
 for (const match of css.matchAll(/url\(['"]?([^'"\)]+)['"]?\)/g))
   await stat(join(root, match[1]));
 console.log(

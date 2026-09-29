@@ -7,6 +7,8 @@ export const publicFiles = [
   "index.html",
   "404.html",
   "favicon.ico",
+  "robots.txt",
+  "sitemap.xml",
   "assets",
   "img",
   "legal-info",

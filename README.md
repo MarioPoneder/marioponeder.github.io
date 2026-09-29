@@ -19,7 +19,7 @@ npm run check
 npm run build
 ```
 
-The check validates all four HTML pages, internal links and anchors, local assets, image metadata, and the absence of external embeds. The build copies public files into `_site/`, first clearing that generated directory so removed pages cannot remain in a later build. Neither command publishes anything.
+The check validates all four HTML pages, internal links and anchors, local assets, image metadata, and the absence of external embeds. It also checks canonical URLs, social metadata, JSON-LD entities and references, sitemap coverage, and crawler access. The build copies public files into `_site/`, first clearing that generated directory so removed pages cannot remain in a later build. Neither command publishes anything.
 
 The site is plain HTML, CSS, and JavaScript, with no runtime dependencies, remote fonts, analytics, cookies, storage, contact backend, or external embeds. Portfolio filters and the mobile menu are progressive enhancements: all content and navigation remain available without JavaScript.
 
@@ -29,6 +29,8 @@ The site is plain HTML, CSS, and JavaScript, with no runtime dependencies, remot
 - `legal-info/index.html`: business information, preserving `/legal-info` through a directory redirect.
 - `privacy-policy/index.html`: privacy policy, preserving `/privacy-policy` in the same way.
 - `404.html`: custom error page.
+- `robots.txt`: crawler access and sitemap discovery.
+- `sitemap.xml`: the three indexable canonical pages; exclude error pages and section fragments.
 - `assets/site.css`: responsive layout, typography, color, reduced-motion and focus styles.
 - `assets/site.js`: language filters, mobile navigation, current-section indicator, and collaborator disclosure.
 - `assets/network.svg`: original decorative block-network illustration.
@@ -41,9 +43,21 @@ Header and footer markup is intentionally static and repeated across four pages.
 
 The existing `.github/workflows/` files are unchanged. The current Jekyll workflow can publish these ordinary static files without a theme; `_config.yml` excludes development files. The Gemfile and lockfile are retained for workflow compatibility. Local preview and the static build do not require Ruby. `_site/` can also be served by any static host.
 
-The existing DNS, custom-domain and repository Pages settings are reused. Both root-hosted domains are supported; GitHub Pages currently serves the custom domain at `https://www.decentra.vision/`. Canonical URLs retain the existing `https://decentra.vision` setting. No CNAME file has been added or changed.
+The existing DNS, custom-domain and repository Pages settings are reused. Both root-hosted domains are supported; GitHub Pages serves the custom domain at `https://www.decentra.vision/`. Canonical URLs, structured data, social metadata, the sitemap and `_config.yml` all use that final host. The apex domain and GitHub Pages domain redirect there. No CNAME file has been added or changed.
 
 **Publishing:** the existing workflow deploys a push to `main`. Keep further drafts local until publication is explicitly intended.
+
+## Search and AI discovery
+
+Each indexable page has a self-referencing canonical URL and consistent Open Graph / X metadata using the existing banner. The homepage JSON-LD describes the website, Decentra Vision e.U., and Mario Poneder / 0xTheC0der as connected entities. The other pages reference those same entities. Keep all structured claims aligned with visible content and keep person profiles attached to the Person rather than the Organization. No reviews, ratings, hidden FAQs, or unqualified TVL claims are encoded in structured data.
+
+`robots.txt` allows public pages and assets for all crawlers, including search discovery bots such as OAI-SearchBot. This preserves the previous unrestricted access; it does not introduce a separate AI-training opt-out. The 404 page stays `noindex`, and missing URLs must continue to return HTTP 404. No analytics or third-party scripts are needed.
+
+The sitemap omits `lastmod` rather than inventing freshness dates. If adding dates later, use actual significant page changes. Update the sitemap when adding or removing indexable pages. Both the local build and Jekyll deployment include the crawler files.
+
+Google's [AI search guidance](https://developers.google.com/search/docs/appearance/ai-features) uses the same SEO foundations and does not require an `llms.txt` file or special AI markup. This site already exposes its full content as static HTML. [OpenAI's crawler documentation](https://developers.openai.com/api/docs/bots) distinguishes search discovery from model training. No ranking or AI citation is guaranteed by these settings.
+
+For ownership-level monitoring, submit `https://www.decentra.vision/sitemap.xml` in the owner's verified Google Search Console and Bing Webmaster Tools properties. Those account actions are separate from the website deployment; no verification tokens or submissions are fabricated here.
 
 ## Validation of this draft
 

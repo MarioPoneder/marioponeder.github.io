@@ -2,7 +2,7 @@
 # Local preview and builds need only Node.js; no Ruby or theme is required.
 title: Decentra Vision - On-chain security
 description: Independent smart contract security research by Mario Poneder. Rust, Solidity and Cairo.
-url: https://decentra.vision
+url: https://www.decentra.vision
 exclude:
   - README.md
   - CONTENT-NOTES.md

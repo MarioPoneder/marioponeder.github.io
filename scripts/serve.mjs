@@ -14,6 +14,7 @@ const mime = {
   ".ico": "image/x-icon",
   ".ttf": "font/ttf",
   ".txt": "text/plain; charset=utf-8",
+  ".xml": "application/xml; charset=utf-8",
 };
 const server = createServer(async (req, res) => {
   if (!["GET", "HEAD"].includes(req.method)) {
