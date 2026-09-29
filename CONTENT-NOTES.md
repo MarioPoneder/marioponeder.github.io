@@ -27,7 +27,9 @@ For each selected project, the entry with the **longest recorded duration** is u
 
 ### Selection rationale and DefiLlama research
 
-Protocol scale informed the selection, with room for substantial Cairo and infrastructure work. TVL is not a useful common ranking for aggregators, RWA issuers and compiler libraries. Engagement date provides a clear, stable public order. No live or static “funds secured” metric is shown on the site.
+Protocol scale informed the selection, with room for substantial Cairo and infrastructure work. TVL is not a useful common ranking for aggregators, RWA issuers and compiler libraries. Engagement date provides a clear, stable public order.
+
+The hero includes “Contributed security research to protocols with over $40B in combined TVL.” Its expandable calculation note identifies the historical basis: $43,331,110,024 on 18 September 2025, calculated from DefiLlama data on 29 September 2026 and the full portfolio at commit `1b6e50db0394b4936fd9f7afbb83e191f05a8e1b`. This combines commissioned audits and competitive findings across 28 matched products / 27 protocol families, excluding judging-only work. Repeated engagements count once, product scope is matched where possible, and values are summed on the same date after the relevant work. This is gross protocol-level TVL, not current TVL, unique underlying capital, or a claim to have reviewed every deployed version. It does not sum the selected-work snapshots below. The full research and reproducible calculations are retained locally in `.preview/tvl-coverage-analysis.md`, `.preview/tvl-calculate.mjs`, and `.preview/tvl-data/`.
 
 The following **product-level** TVL snapshots were read from DefiLlama on 27 September 2026. They are contextual selection research, not values audited or secured by Mario; in particular Jupiter's lending and perpetuals metrics do not describe his prediction-market engagement, and Lombard's aggregate LBTC TVL does not describe just its Starknet implementation. Values can change, and these products must not be added together as a portfolio total.
 

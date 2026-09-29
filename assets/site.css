@@ -238,6 +238,39 @@ a:hover .arrow {
   color: var(--ink);
   font-weight: 600;
 }
+.hero-impact {
+  max-width: 450px;
+  margin-top: 22px;
+}
+.hero-impact > p {
+  color: var(--ink);
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+.hero-impact strong {
+  color: var(--blue);
+  font-weight: 600;
+}
+.tvl-methodology {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.tvl-methodology summary {
+  width: fit-content;
+  padding-block: 7px;
+  cursor: pointer;
+}
+.tvl-methodology summary:hover {
+  color: var(--blue);
+}
+.tvl-methodology p {
+  margin-top: 10px;
+}
+.tvl-methodology a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .hero-actions {
   display: flex;
   align-items: center;
