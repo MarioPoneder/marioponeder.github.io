@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 
-const origin = "https://www.decentra.vision";
+const origin = "https://decentra.vision";
 
 export async function checkSeo(contents) {
   const canonicalPages = new Set();

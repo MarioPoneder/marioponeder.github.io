@@ -43,7 +43,7 @@ Header and footer markup is intentionally static and repeated across four pages.
 
 The existing `.github/workflows/` files are unchanged. The current Jekyll workflow can publish these ordinary static files without a theme; `_config.yml` excludes development files. The Gemfile and lockfile are retained for workflow compatibility. Local preview and the static build do not require Ruby. `_site/` can also be served by any static host.
 
-The existing DNS, custom-domain and repository Pages settings are reused. Both root-hosted domains are supported; GitHub Pages serves the custom domain at `https://www.decentra.vision/`. Canonical URLs, structured data, social metadata, the sitemap and `_config.yml` all use that final host. The apex domain and GitHub Pages domain redirect there. No CNAME file has been added or changed.
+GitHub Pages uses `decentra.vision` as its primary custom domain. The existing DNS records support both addresses; `www.decentra.vision` and `marioponeder.github.io` redirect to `https://decentra.vision/`, with HTTPS enforced. Canonical URLs, structured data, social metadata, the sitemap and `_config.yml` all use that final host. The custom domain is configured in the repository's Pages settings; this Actions-based deployment does not use a CNAME file.
 
 **Publishing:** the existing workflow deploys a push to `main`. Keep further drafts local until publication is explicitly intended.
 
@@ -57,7 +57,7 @@ The sitemap omits `lastmod` rather than inventing freshness dates. If adding dat
 
 Google's [AI search guidance](https://developers.google.com/search/docs/appearance/ai-features) uses the same SEO foundations and does not require an `llms.txt` file or special AI markup. This site already exposes its full content as static HTML. [OpenAI's crawler documentation](https://developers.openai.com/api/docs/bots) distinguishes search discovery from model training. No ranking or AI citation is guaranteed by these settings.
 
-For ownership-level monitoring, submit `https://www.decentra.vision/sitemap.xml` in the owner's verified Google Search Console and Bing Webmaster Tools properties. Those account actions are separate from the website deployment; no verification tokens or submissions are fabricated here.
+For ownership-level monitoring, submit `https://decentra.vision/sitemap.xml` in the owner's verified Google Search Console and Bing Webmaster Tools properties. Those account actions are separate from the website deployment; no verification tokens or submissions are fabricated here.
 
 ## Validation of this draft
 

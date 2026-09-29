@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.decentra.vision/sitemap.xml
+Sitemap: https://decentra.vision/sitemap.xml
